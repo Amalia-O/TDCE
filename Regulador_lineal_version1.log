@@ -1,0 +1,43 @@
+Circuit: * C:\Users\Usuario\Documents\24 Circuitos 2\TP\Regulador_lineal_version1.asc
+
+.step rl=5
+.step rl=20
+.step rl=100
+
+
+Measurement: vo1rl
+  step	v(vo)	at
+     1	0.00628355	6.6
+     2	0.0166779	6.6
+     3	0.0369237	6.6
+
+Measurement: vo2rl
+  step	v(vo)	at
+     1	0.00632237	7
+     2	0.0167555	7
+     3	0.0370396	7
+
+Measurement: reglin
+  step	((vo2rl-vo1rl)/0.4)
+     1	9.70659e-005
+     2	0.000194092
+     3	0.000289828
+
+
+Date: Tue Mar 25 22:22:49 2025
+Total elapsed time: 0.118 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 200
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 39
+fillins = 34
+solver = Normal
+Matrix Compiler1: 4.81 KB object code size  0.8/0.5/[0.5]
+Matrix Compiler2: 4.05 KB object code size  0.4/0.5/[0.3]
+
