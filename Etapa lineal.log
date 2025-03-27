@@ -1,13 +1,62 @@
-Circuit: * C:\Users\usuario\137\Facultad\circuitos 2\Proyecto integrador\Checkpoint 1\4 Etapa lineal\Etapa lineal.asc
+Circuit: * C:\Users\usuario\137\Facultad\circuitos 2\Proyecto integrador\Checkpoint 1\5 Etapa lineal\Etapa lineal.asc
+
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Bipolar Transistors ---
+Name:       q5          q6          q3          q2          q4
+Model:    bc557c      bc557c      d45h11      2n3019      bc547c
+Ib:      -9.41e-07   -9.51e-07   -2.35e-02    1.21e-04    6.19e-07
+Ic:      -4.23e-04   -4.23e-04   -1.48e+00    2.35e-02    3.03e-04
+Vbe:     -5.95e-01   -5.95e-01   -5.64e-01    7.30e-01    5.88e-01
+Vbc:      2.78e-01    0.00e+00    1.25e+00   -5.21e-01   -4.05e+00
+Vce:     -8.73e-01   -5.95e-01   -1.82e+00    1.25e+00    4.64e+00
+BetaDC:   4.50e+02    4.44e+02    6.28e+01    1.95e+02    4.89e+02
+Gm:       1.60e-02    1.60e-02    5.96e+01    8.81e-01    1.16e-02
+Rpi:      2.81e+04    2.78e+04    9.37e-01    2.15e+02    4.23e+04
+Rx:       1.00e+00    1.00e+00    1.78e+00    1.00e+01    1.00e+00
+Ro:       5.67e+04    5.61e+04    7.85e+00    4.28e+03    1.87e+05
+Cbe:      3.94e-11    3.94e-11    3.36e-07    8.18e-10    3.53e-11
+Cbc:      4.11e-12    4.91e-12    2.94e-10    1.33e-11    1.17e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   4.51e+02    4.46e+02    5.59e+01    1.89e+02    4.89e+02
+Cbx:      2.43e-12    2.90e-12    7.26e-11    0.00e+00    7.18e-13
+Ft:       5.55e+07    5.40e+07    2.82e+07    1.69e+08    4.95e+07
+
+Name:       q1
+Model:    bc547c
+Ib:       8.65e-07
+Ic:       4.24e-04
+Vbe:      5.97e-01
+Vbc:     -4.32e+00
+Vce:      4.92e+00
+BetaDC:   4.91e+02
+Gm:       1.62e-02
+Rpi:      3.03e+04
+Rx:       1.00e+00
+Ro:       1.34e+05
+Cbe:      3.80e-11
+Cbc:      1.15e-12
+Cjs:      0.00e+00
+BetaAC:   4.90e+02
+Cbx:      7.06e-13
+Ft:       6.47e+07
 
 
-Date: Tue Mar 25 22:09:20 2025
-Total elapsed time: 0.093 seconds.
+
+vo1rc: v(vo)=5.01177 at 500
+vo2rc: v(vo)=4.98493 at 3.33
+io1rc: i(rl)=0.0100235 at 500
+io2rc: i(rl)=1.49698 at 3.33
+regcar: (-(vo2rc - vo1rc) / (io2rc - io1rc) )=0.0180453
+
+
+Date: Tue Mar 25 22:54:15 2025
+Total elapsed time: 1.086 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 2043
+totiter = 8
 traniter = 0
 tranpoints = 0
 accept = 0
@@ -15,6 +64,5 @@ rejected = 0
 matrix size = 29
 fillins = 24
 solver = Normal
-Matrix Compiler1: 3.49 KB object code size  0.8/0.4/[0.3]
-Matrix Compiler2: 2.96 KB object code size  0.3/0.4/[0.2]
-
+Matrix Compiler1: 3.49 KB object code size
+Matrix Compiler2: 2.96 KB object code size
