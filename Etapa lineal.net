@@ -1,25 +1,29 @@
 * C:\Users\usuario\137\Facultad\circuitos 2\TDCE\Etapa lineal.asc
 Vi vi 0 {Vi}
 Vref vref 0 {VREF} AC 0
-RC1 vi N002 {RC1}
+RC1 vi N004 {RC1}
 RD1 vo v_f 2.2k
 RD2 v_f 0 1k
 RL vo 0 {RL}
-Q1 N006 vref N009 0 BC547C
-Q2 N001 V_amp vo 0 2N3019
-Q3 vo N001 vi 0 D45H11
-Q4 N005 N007 N009 0 TBJ-NPN-1
-RE1 N009 0 {RE}
-RC2 vi N003 {RC2}
-Q6 N006 N005 N002 0 BC557C
-Q5 N005 N005 N003 0 BC557C
-Q7 V_amp vref N008 0 BC547C
-RB2 N008 0 {RB2}
-RB1 vi N004 {RB1}
-Q8 V_amp N006 N004 0 BC557C
-L1 N007 V_f 100000Meg
-C1 N007 P001 100Meg
+Q1 N008 vref N011 0 BC547C
+Q2 N002 V_amp N001 0 2N3019
+Q3 N001 N002 vi 0 D45H11
+Q4 N007 N009 N011 0 TBJ-NPN-1
+RE1 N011 0 {RE}
+RC2 vi N005 {RC2}
+Q6 N008 N007 N004 0 BC557C
+Q5 N007 N007 N005 0 BC557C
+Q7 V_amp vref N010 0 BC547C
+RB2 N010 0 {RB2}
+RB1 vi N006 {RB1}
+Q8 V_amp N008 N006 0 BC557C
+L1 N009 V_f 100000Meg
+C1 N009 P001 100Meg
 V1 P001 0 AC 1
+RS vo N001 {RS}
+Q9 V_amp N003 vo 0 2N3019
+RP1 N001 N003 10
+RP2 N003 0 10
 .model NPN NPN
 .model PNP PNP
 .lib C:\Users\usuario\Documents\LTspiceXVII\lib\cmp\standard.bjt
@@ -36,7 +40,12 @@ V1 P001 0 AC 1
 * Eficiencia
 * -100*(V(vo)*I(RL))/(V(vi)*I(Vi))
 * Tensión de salida
-* .dc Vi 0 8\n.param RL 3.33\n  \n.meas DC VoEspMin FIND V(vo) AT 6.6\n.meas DC VoEspMed FIND V(vo) AT 6.8\n.meas DC VoEspMax FIND V(vo) AT 7\n.meas DC VoError PARAM ((VoEspMin + VoEspMed + VoEspMax)/3 - 5)
+.dc Vi 0 8
+.param RL 3.33
+.meas DC VoEspMin FIND V(vo) AT 6.6
+.meas DC VoEspMed FIND V(vo) AT 6.8
+.meas DC VoEspMax FIND V(vo) AT 7
+.meas DC VoError PARAM ((VoEspMin + VoEspMed + VoEspMax)/3 - 5)
 * Regulacion de linea
 * .dc Vi 0 8\n.param RL=3.33\n \n.meas DC Vol1rl FIND V(vo) AT=6.6\n.meas DC Vol2rl FIND V(vo) AT=7\n.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)
 * .op\n.step param RL 3.33 500 50\n \n.meas OP Vo1rc FIND V(vo) AT 500\n.meas OP Vo2rc FIND V(vo) AT 3.33\n.meas OP Io1rc FIND I(RL) AT 500\n.meas OP Io2rc FIND I(RL) AT 3.33\n.meas OP RegCar PARAM (-(Vo2rc - Vo1rc) / (Io2rc - Io1rc) )
@@ -61,7 +70,7 @@ V1 P001 0 AC 1
 .model TBJ-NPN-1 NPN(IS=4.679E-14 NF=1.01 ISE=2.642E-15 NE=1.581 BF={BETA} IKF=0.1371 VAF=52.64 NR=1.019 ISC=2.337E-14 NC=1.164 BR=11.57 IKR=0.1144 VAR=364.5 RB=1 IRB=1.00E-06 RBM=1 RE=0.2598 RC=1 XTB=0 EG=1.11 XTI=3 CJE=1.229E-11 VJE=0.5591 MJE=0.3385 TF=4.689E-10 XTF=160 VTF=2.828 ITF=0.8842 PTF=0 CJC=4.42E-12 VJC=0.1994 MJC=0.2782 XCJC=0.6193 TR=1.00E-32 CJS=0 VJS=0.75 MJS=0.333 FC=0.7936 Vceo=45 Icrating=100m mfg=Philips)
 .param BETA 458.7
 * .step param BETA list 420 520 800
-.ac dec 100 1 10Meg
-.param RL=3.33
+* .ac dec 100 1 10Meg\n.param RL=3.33
+.step param RS list 0.1 1
 .backanno
 .end
