@@ -1,26 +1,30 @@
 * C:\Users\usuario\137\Facultad\circuitos 2\TDCE\Etapa lineal.asc
 Vi vi 0 {Vi}
 Vref vref 0 {VREF} AC 0
-RC1 vi N002 {RC1}
+RC1 vi N004 {RC1}
 RD1 vo v_f 2.2k
 RD2 v_f 0 1k
 RL vo 0 {RL}
-Q1 N006 vref N007 0 BC547C
-Q2 N001 V_amp vo 0 BC547B
-Q3 vo N001 vi 0 2SB688
-Q4 N004 V_f N007 0 BC547C
-RE1 N010 0 {RE}
-RC2 vi N003 {RC2}
-Q6 N006 N004 N002 0 BC557B
-Q5 N004 N004 N003 0 BC557B
-Q7 V_amp N008 N011 0 BC547C
-RB2 N011 0 {RB2}
-RB1 vi N005 {RB1}
-Q8 V_amp N006 N005 0 BC557C
-Q9 N007 N008 N010 0 BC547C
-Q10 N008 N008 N009 0 BC547C
-R1 vref N008 1.5k
-R2 N009 0 {RE}
+Q1 N008 vref N009 0 BC547C
+Q2 N002 V_amp N001 0 BC547B
+Q3 N001 N002 vi 0 2SB688
+Q4 N006 V_f N009 0 BC547C
+RE1 N012 0 {RE}
+RC2 vi N005 {RC2}
+Q6 N008 N006 N004 0 BC557B
+Q5 N006 N006 N005 0 BC557B
+Q7 V_amp N010 N013 0 BC547C
+RB2 N013 0 {RB2}
+RB1 vi N007 {RB1}
+Q8 V_amp N008 N007 0 BC557C
+Q9 N009 N010 N012 0 BC547C
+Q10 N010 N010 N011 0 BC547C
+R1 vref N010 1.5k
+R2 N011 0 {RE}
+RP1 N001 N003 1k
+RP2 N003 0 12k
+R5 vo N001 0.75
+Q11 V_amp N003 vo 0 BC547B
 .model NPN NPN
 .model PNP PNP
 .lib C:\Users\usuario\Documents\LTspiceXVII\lib\cmp\standard.bjt
@@ -39,11 +43,7 @@ R2 N009 0 {RE}
 * Tensión de salida
 * .dc Vi 0 8\n.param RL 3.33\n  \n.meas DC VoEspMin FIND V(vo) AT 6.6\n.meas DC VoEspMed FIND V(vo) AT 6.8\n.meas DC VoEspMax FIND V(vo) AT 7\n.meas DC VoError PARAM ((VoEspMin + VoEspMed + VoEspMax)/3 - 5)
 * Regulacion de linea
-.dc Vi 0 8
-.param RL=3.33
-.meas DC Vol1rl FIND V(vo) AT=6.6
-.meas DC Vol2rl FIND V(vo) AT=7
-.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)
+* .dc Vi 0 8\n.param RL=3.33\n \n.meas DC Vol1rl FIND V(vo) AT=6.6\n.meas DC Vol2rl FIND V(vo) AT=7\n.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)
 * .op\n.step param RL 3.33 500 50\n \n.meas OP Vo1rc FIND V(vo) AT 500\n.meas OP Vo2rc FIND V(vo) AT 3.33\n.meas OP Io1rc FIND I(RL) AT 500\n.meas OP Io2rc FIND I(RL) AT 3.33\n.meas OP RegCar PARAM (-(Vo2rc - Vo1rc) / (Io2rc - Io1rc) )
 .param RC1=510
 * Parametros generales
@@ -67,5 +67,9 @@ R2 N009 0 {RE}
 .param BETA 458.7
 * .step param BETA list 420 520 800
 .model 2SB688 PNP(Bf=70 Br=1 Is=73f Eg=1.11 Cjc=4.8p Cje=10p Vaf=100 Tf=1.923n Tr=10n Mjc=.330 Vjc=.75 Mje=.33 Vje=.75 Cjs=2p )
+* Vo_max = 5.5V\nI_max = 1.6A\nI_CC = 1A
+.op
+.step dec param RL 500 0.1m 5
+* Limitador de corriente
 .backanno
 .end
