@@ -1,0 +1,4979 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "103f7a8f-be6d-4c1b-98f8-d46e7455db32")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Jumper:Jumper_2_Bridged"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Bridged"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, closed/bridged"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_1"
+				(arc
+					(start 1.524 0.254)
+					(mid 0 0.762)
+					(end -1.524 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "ltspice:npn"
+			(pin_numbers hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "npn_0_0"
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 3.175 -6.35)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 -6.35)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.8702 -6.6802) (xy 3.5052 -6.0452)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.8702 -6.6802) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.5052 -6.0452) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 0)
+					(length 0.0005)
+					(name "C"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 0)
+					(length 0.0005)
+					(name "B"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 0)
+					(length 0.0005)
+					(name "E"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ltspice:pnp"
+			(pin_numbers hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "pnp_0_0"
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 -6.35)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.8702 -6.6802) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.8702 -6.6802) (xy 3.5052 -6.0452)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.5052 -6.0452) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -7.62) (xy 3.175 -6.35)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 0)
+					(length 0.0005)
+					(name "C"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 0)
+					(length 0.0005)
+					(name "B"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 0)
+					(length 0.0005)
+					(name "E"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ltspice:res"
+			(pin_numbers hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "res_0_0"
+				(polyline
+					(pts
+						(xy 0 -6.35) (xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -7.62) (xy 1.27 -6.985)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -6.985) (xy 0 -6.35)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.905) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -5.08) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 1.27 -1.905)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 1.27 -1.27 0)
+					(length 0.0005)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 -7.62 0)
+					(length 0.0005)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ltspice:voltage"
+			(pin_numbers hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "voltage_0_0"
+				(circle
+					(center 0 -4.445)
+					(radius 2.54)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -6.985) (xy 0 -7.62)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.5052) (xy 0 -2.2352)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.905) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -6.0452) (xy -0.635 -6.0452)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -2.8702) (xy -0.635 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 -1.27 0)
+					(length 0.0005)
+					(name "+"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 0.0005)
+					(name "-"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 71.12 72.39) (xy 71.12 67.31)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "034e9ac4-d6c5-4808-8785-2376b96d8cc5")
+	)
+	(wire
+		(pts
+			(xy 95.25 82.55) (xy 83.82 82.55)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "045b537b-eb16-47fa-8ce4-3df37bac3e19")
+	)
+	(wire
+		(pts
+			(xy 118.11 82.55) (xy 118.11 73.66)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "06035568-f7e9-47fd-b25d-2666885a1cb1")
+	)
+	(wire
+		(pts
+			(xy 118.11 115.57) (xy 118.11 95.25)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0771ba39-78f5-40a4-bd21-3ba3ca7f4bd1")
+	)
+	(wire
+		(pts
+			(xy 72.39 113.03) (xy 60.96 113.03)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0918a201-cda5-4f0b-b0e6-42cae3d0fac1")
+	)
+	(wire
+		(pts
+			(xy 60.96 101.6) (xy 60.96 93.98)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0c413d32-bafe-4539-8bb2-cdb741e6e5a1")
+	)
+	(wire
+		(pts
+			(xy 146.05 77.47) (xy 142.24 77.47)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0da07938-5f37-4eed-b892-3ec4dfb98f03")
+	)
+	(wire
+		(pts
+			(xy 95.25 90.17) (xy 95.25 82.55)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "127b76de-519b-46b0-9f96-0ebaa8ead2ed")
+	)
+	(wire
+		(pts
+			(xy 71.12 90.17) (xy 71.12 86.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "2ae6e7a5-74ed-485a-b8b9-13578e746d2d")
+	)
+	(wire
+		(pts
+			(xy 71.12 59.69) (xy 53.34 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "2c20b603-b83d-4ed6-8a94-a08ac6df99d0")
+	)
+	(wire
+		(pts
+			(xy 175.26 83.82) (xy 175.26 78.74)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "2f54e0c2-bd8d-46c9-85aa-b8f6173b362a")
+	)
+	(wire
+		(pts
+			(xy 53.34 64.77) (xy 53.34 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3301ba3d-b418-48df-bb1c-adfebf7fbfc7")
+	)
+	(wire
+		(pts
+			(xy 83.82 76.2) (xy 76.2 76.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "338ba1d2-0b10-4130-8318-b4dea51880b1")
+	)
+	(wire
+		(pts
+			(xy 149.86 95.25) (xy 118.11 95.25)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "38337677-f813-4481-bf22-a797e1ad48ed")
+	)
+	(wire
+		(pts
+			(xy 95.25 101.6) (xy 83.82 101.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3945245e-5b8f-4227-9de4-91ab991045fa")
+	)
+	(wire
+		(pts
+			(xy 118.11 125.73) (xy 118.11 123.19)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3a2d3c71-cef5-46b8-867f-e81c4cff349e")
+	)
+	(wire
+		(pts
+			(xy 161.29 68.58) (xy 153.67 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3ece0d5b-fe8a-4776-820f-79722f866fb5")
+	)
+	(wire
+		(pts
+			(xy 60.96 113.03) (xy 60.96 107.95)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "43dcafdf-88c0-44b9-a10c-e9672cfe1b33")
+	)
+	(wire
+		(pts
+			(xy 72.39 119.38) (xy 66.04 119.38)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "455ac89d-8366-4c5d-b258-052b72f05566")
+	)
+	(wire
+		(pts
+			(xy 161.29 124.46) (xy 161.29 119.38)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "45eb06df-dfac-4101-8f8e-e605287f19a2")
+	)
+	(wire
+		(pts
+			(xy 83.82 115.57) (xy 83.82 101.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "47302976-7f5d-405f-892c-e2288e144b11")
+	)
+	(wire
+		(pts
+			(xy 153.67 68.58) (xy 146.05 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "47a9dc2c-ab04-4b73-940c-a2360a543ba2")
+	)
+	(wire
+		(pts
+			(xy 60.96 115.57) (xy 60.96 113.03)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "4893c170-9491-42c6-b146-206894981cc5")
+	)
+	(wire
+		(pts
+			(xy 118.11 134.62) (xy 118.11 132.08)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "4911c927-0a4c-4ed1-a25a-6ad514dfa35c")
+	)
+	(wire
+		(pts
+			(xy 66.04 93.98) (xy 60.96 93.98)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "505c8ed2-c9ec-4b66-adc4-2de7da9bcadd")
+	)
+	(wire
+		(pts
+			(xy 142.24 77.47) (xy 142.24 73.66)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5600283c-9d07-429c-9483-eb1a769fdbfc")
+	)
+	(wire
+		(pts
+			(xy 95.25 60.96) (xy 95.25 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "586f5e9b-c633-46bb-b1d2-e410da02d1bf")
+	)
+	(wire
+		(pts
+			(xy 83.82 101.6) (xy 71.12 101.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "59c57915-aeab-415b-861c-5ff2ddc5e31c")
+	)
+	(wire
+		(pts
+			(xy 118.11 59.69) (xy 95.25 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5dd1d32a-c837-49e6-81b5-87256a40f54f")
+	)
+	(wire
+		(pts
+			(xy 71.12 86.36) (xy 71.12 80.01)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "622ba063-cd75-474c-b8a0-7a1525e15502")
+	)
+	(wire
+		(pts
+			(xy 83.82 82.55) (xy 83.82 76.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "693fc7a2-24a9-44c1-98b2-500de0c417c4")
+	)
+	(wire
+		(pts
+			(xy 175.26 68.58) (xy 161.29 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "6b47590d-0aa5-4805-8304-0ed1b4109512")
+	)
+	(wire
+		(pts
+			(xy 90.17 76.2) (xy 83.82 76.2)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "6f57a480-bc10-4cb3-87a4-20d89115cfbf")
+	)
+	(wire
+		(pts
+			(xy 83.82 125.73) (xy 83.82 123.19)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "755ebc88-019b-41e4-9c96-816835b37e25")
+	)
+	(wire
+		(pts
+			(xy 105.41 93.98) (xy 100.33 93.98)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "7d2da6ed-0bb7-4930-892e-87d8934bccd9")
+	)
+	(wire
+		(pts
+			(xy 53.34 74.93) (xy 53.34 71.12)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "8871e696-45d4-4f7e-a7b8-90245203dd0f")
+	)
+	(wire
+		(pts
+			(xy 36.83 106.68) (xy 36.83 104.14)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "99282ce0-eb46-4d5c-8c67-70c50374b004")
+	)
+	(wire
+		(pts
+			(xy 78.74 119.38) (xy 72.39 119.38)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "a84e472f-21d7-461f-beb4-dd77b9162271")
+	)
+	(wire
+		(pts
+			(xy 161.29 96.52) (xy 161.29 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "adb74d82-8daa-4340-818d-2f19cf7cc0b3")
+	)
+	(wire
+		(pts
+			(xy 153.67 77.47) (xy 153.67 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "afc4d5e2-0a64-4dff-bc41-3daf2d657be5")
+	)
+	(wire
+		(pts
+			(xy 105.41 107.95) (xy 105.41 93.98)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b25ae319-8018-4949-b9e6-d590204fb1ea")
+	)
+	(wire
+		(pts
+			(xy 161.29 113.03) (xy 161.29 107.95)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b280032e-3546-4bee-b16d-6c46b222d905")
+	)
+	(wire
+		(pts
+			(xy 149.86 95.25) (xy 149.86 82.55)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b2e60f87-0893-4953-87d8-ae37903f29b3")
+	)
+	(wire
+		(pts
+			(xy 95.25 82.55) (xy 95.25 80.01)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b3cc76ea-49a8-45ea-972b-898702897366")
+	)
+	(wire
+		(pts
+			(xy 113.03 119.38) (xy 78.74 119.38)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ba375072-46d5-441e-86dc-fed3e5d12b4c")
+	)
+	(wire
+		(pts
+			(xy 71.12 101.6) (xy 71.12 97.79)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "be56f0c0-e273-45b8-b17d-8fd378a21691")
+	)
+	(wire
+		(pts
+			(xy 60.96 93.98) (xy 36.83 93.98)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "be819074-04ae-4262-9667-2991ff25549a")
+	)
+	(wire
+		(pts
+			(xy 90.17 86.36) (xy 71.12 86.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c4255d61-73c6-4352-b4d6-e0c04ebc489d")
+	)
+	(wire
+		(pts
+			(xy 118.11 67.31) (xy 118.11 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c83dbaec-3378-483c-9281-5086d042574e")
+	)
+	(wire
+		(pts
+			(xy 72.39 119.38) (xy 72.39 113.03)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ca16abdc-89df-4013-ba25-6d3dc3256854")
+	)
+	(wire
+		(pts
+			(xy 161.29 107.95) (xy 129.54 107.95)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "cbdf9b76-74d4-49ab-8d51-28477255f00e")
+	)
+	(wire
+		(pts
+			(xy 95.25 101.6) (xy 95.25 97.79)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "cf586f58-188e-4b46-bf86-a5b474c53a40")
+	)
+	(wire
+		(pts
+			(xy 138.43 68.58) (xy 135.89 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d38d5dd7-75bd-4233-816f-db0d981fb660")
+	)
+	(wire
+		(pts
+			(xy 135.89 68.58) (xy 135.89 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d39aef11-626f-4e06-854a-af4aeb9bc26e")
+	)
+	(wire
+		(pts
+			(xy 119.38 107.95) (xy 105.41 107.95)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d4053b50-08b6-44b3-8f4a-420211fc3224")
+	)
+	(wire
+		(pts
+			(xy 95.25 72.39) (xy 95.25 67.31)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "dc40608b-02cb-48ce-be2d-14c7f2f0d654")
+	)
+	(wire
+		(pts
+			(xy 36.83 97.79) (xy 36.83 93.98)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "dd97ab85-aff8-4326-bd9e-f4b44ac42963")
+	)
+	(wire
+		(pts
+			(xy 113.03 86.36) (xy 100.33 86.36)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e074aa74-7837-4bb4-9773-c59040213e86")
+	)
+	(wire
+		(pts
+			(xy 175.26 72.39) (xy 175.26 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e2cf3bc3-a5a4-4792-99d4-413eff1a399f")
+	)
+	(wire
+		(pts
+			(xy 60.96 134.62) (xy 60.96 132.08)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e405e4f2-8310-4822-99e9-16bbc3d48487")
+	)
+	(wire
+		(pts
+			(xy 71.12 60.96) (xy 71.12 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "eac80de2-a9df-4020-bec4-606cfed8fbc3")
+	)
+	(wire
+		(pts
+			(xy 95.25 59.69) (xy 71.12 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ef40251a-e8e8-4ebd-84b4-0f1da571d1c4")
+	)
+	(wire
+		(pts
+			(xy 127 134.62) (xy 118.11 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3784310-bb4d-4c51-ac3b-433a78a7bdbe")
+	)
+	(wire
+		(pts
+			(xy 60.96 125.73) (xy 60.96 123.19)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "f4e2db69-d4f5-4aba-a645-01b14c39a09c")
+	)
+	(wire
+		(pts
+			(xy 135.89 59.69) (xy 118.11 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "f6e4fcb2-f238-47c9-968d-26cfdb0f3fce")
+	)
+	(wire
+		(pts
+			(xy 118.11 95.25) (xy 118.11 90.17)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "f6ff0270-781a-497f-b870-84daf9eb67dc")
+	)
+	(wire
+		(pts
+			(xy 161.29 107.95) (xy 161.29 102.87)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "fec4aef9-23de-4092-9b0d-9996399b6d14")
+	)
+	(text "Alimentacion"
+		(exclude_from_sim no)
+		(at 45.085 78.74 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "0079fa87-9c2d-4e39-b3fc-dd603b6b9147")
+	)
+	(text ".dc Vi 0 8\n.param RL=3.33\n \n.meas DC Vol1rl FIND V(vo) AT=6.6\n.meas DC Vol2rl FIND V(vo) AT=7\n.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)"
+		(exclude_from_sim no)
+		(at 276.225 83.9216 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left top)
+		)
+		(uuid "07ae6098-0b9f-4068-a417-1e0ec0c8f375")
+	)
+	(text ".step param RB1 list 46 56"
+		(exclude_from_sim no)
+		(at 233.68 142.24 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "19f2731f-287d-4565-aa66-c3d23af9b62c")
+	)
+	(text "Regulacion de carga"
+		(exclude_from_sim no)
+		(at 321.31 81.915 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "1eccb613-4579-4dca-8242-5de5be4c7ec0")
+	)
+	(text ".param RB2=1.8k"
+		(exclude_from_sim no)
+		(at 233.68 123.19 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "216fb0d9-02dc-4cdc-8f1b-606d3d748915")
+	)
+	(text "Pruebas"
+		(exclude_from_sim no)
+		(at 234.315 129.54 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "2a01255f-ffe3-4ad0-93bb-de9b0e2d8d28")
+	)
+	(text "Amplificador"
+		(exclude_from_sim no)
+		(at 58.42 137.16 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "2bcbb3b6-cc7a-4e0a-b52f-881f9dd58478")
+	)
+	(text ".param RC2=510"
+		(exclude_from_sim no)
+		(at 233.68 110.49 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "33b0d8d0-e1da-45d0-9d01-8ded9343cdac")
+	)
+	(text "Eficiencia"
+		(exclude_from_sim no)
+		(at 276.225 106.68 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "59102844-cfa7-44ae-bc35-08921b325bf7")
+	)
+	(text ".step param VREF 1.5 1.6 0.01"
+		(exclude_from_sim no)
+		(at 233.68 137.16 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "5c0a7607-86cf-4582-946a-93a6f02b0463")
+	)
+	(text "Generador"
+		(exclude_from_sim no)
+		(at 29.845 113.03 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "5d3a7a05-48dc-4dfd-b448-dd8b93dc3081")
+	)
+	(text ".dc Vi 6.6 7\n.param RL=3.33\n \n.meas DC VoEnc FIND V(vo) AT 6.8\n.meas DC LDO PARAM (6.6 - VoEnc)"
+		(exclude_from_sim no)
+		(at 322.58 107.4166 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left top)
+		)
+		(uuid "5d5c6499-28da-4147-b0c1-b6b260ef5007")
+	)
+	(text ".step param RL 3.33 500 1"
+		(exclude_from_sim no)
+		(at 233.68 134.62 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "727aa953-17c6-46f6-81bf-33ffab787b92")
+	)
+	(text ".model TBJ-NPN-1 NPN(IS=4.679E-14 NF=1.01 ISE=2.642E-15 NE=1.581 BF={BETA} IKF=0.1371 VAF=52.64 NR=1.019 ISC=2.337E-14 NC=1.164 BR=11.57 IKR=0.1144 VAR=364.5 RB=1 IRB=1.00E-06 RBM=1 RE=0.2598 RC=1 XTB=0 EG=1.11 XTI=3 CJE=1.229E-11 VJE=0.5591 MJE=0.3385 TF=4.689E-10 XTF=160 VTF=2.828 ITF=0.8842 PTF=0 CJC=4.42E-12 VJC=0.1994 MJC=0.2782 XCJC=0.6193 TR=1.00E-32 CJS=0 VJS=0.75 MJS=0.333 FC=0.7936 Vceo=45 Icrating=100m mfg=Philips)"
+		(exclude_from_sim no)
+		(at 274.955 128.27 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "797de0f1-e4e1-4654-a0ee-90f3db27ff51")
+	)
+	(text ".step param RE list 250 500 1k"
+		(exclude_from_sim no)
+		(at 233.68 139.7 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "836a824a-3901-4383-a056-37a7d29cc07b")
+	)
+	(text ".dc Vi 0 8\n.param RL 3.33\n  \n.meas DC VoEspMin FIND V(vo) AT 6.6\n.meas DC VoEspMed FIND V(vo) AT 6.8\n.meas DC VoEspMax FIND V(vo) AT 7\n.meas DC VoError PARAM ((VoEspMin + VoEspMed + VoEspMax)/3 - 5)"
+		(exclude_from_sim no)
+		(at 232.41 83.9216 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left top)
+		)
+		(uuid "84ab0d4e-0aae-444a-8b1e-42fcfa0e45a9")
+	)
+	(text "Usar un potenciometro en el diseño final"
+		(exclude_from_sim no)
+		(at 13.335 116.84 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "87f8b9e0-8695-4033-ad94-2ca47e0661c6")
+	)
+	(text ".step param RC2 list 460 510 560"
+		(exclude_from_sim no)
+		(at 233.045 150.495 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "8c0cdf9f-8bba-4f99-ac43-e9e5f07cb5c8")
+	)
+	(text ".step param RB2 1.5k 3k 500"
+		(exclude_from_sim no)
+		(at 233.68 144.78 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "9d793f43-4378-4962-843b-7fe0a9c6c6b4")
+	)
+	(text ".op\n.step param RL 3.33 500 50\n \n.meas OP Vo1rc FIND V(vo) AT 500\n.meas OP Vo2rc FIND V(vo) AT 3.33\n.meas OP Io1rc FIND I(RL) AT 500\n.meas OP Io2rc FIND I(RL) AT 3.33\n.meas OP RegCar PARAM (-(Vo2rc - Vo1rc) / (Io2rc - Io1rc) )"
+		(exclude_from_sim no)
+		(at 321.945 83.9216 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left top)
+		)
+		(uuid "a1ac67fd-17f6-4fc3-a3a4-ec175df53a88")
+	)
+	(text ".param VREF=1.56"
+		(exclude_from_sim no)
+		(at 233.68 113.03 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "b179e03d-ef26-4d8c-9041-8a309a7bf0fb")
+	)
+	(text ".step param RC 100 1500 100"
+		(exclude_from_sim no)
+		(at 233.68 132.08 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "b18abf9d-9b85-4efe-add1-46123de36f53")
+	)
+	(text "Regulacion de linea"
+		(exclude_from_sim no)
+		(at 276.225 81.915 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "b3e5d9d9-f1ec-454e-b48b-b45330c092cf")
+	)
+	(text "-100*(V(vo)*I(RL))/(V(vi)*I(Vi))"
+		(exclude_from_sim no)
+		(at 276.225 109.22 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "b5893a3b-8ac8-41b9-ae08-9ac08a313e63")
+	)
+	(text ".param BETA 458.7"
+		(exclude_from_sim no)
+		(at 275.59 133.35 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "bd0abf20-1d2a-4605-9500-9e9216e6313e")
+	)
+	(text ".param Vi=6.8"
+		(exclude_from_sim no)
+		(at 233.68 115.57 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "c2baac50-8c97-4f73-9557-6d474eb510af")
+	)
+	(text "Parametros generales"
+		(exclude_from_sim no)
+		(at 233.68 106.68 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "cc83b616-7abf-4d1b-a85e-8fd21e1a723d")
+	)
+	(text ".param RC1=510"
+		(exclude_from_sim no)
+		(at 233.68 108.585 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "d8bb9f15-abfc-4fd6-a837-b8dddb22967f")
+	)
+	(text "Realimentador"
+		(exclude_from_sim no)
+		(at 149.225 127 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "db172f50-69ea-4d5e-a2db-2b147567dfaa")
+	)
+	(text "LDO"
+		(exclude_from_sim no)
+		(at 322.58 105.41 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "dc93edea-8758-40f1-852e-1ac9cbb92a9d")
+	)
+	(text ".step param BETA list 420 520 800"
+		(exclude_from_sim no)
+		(at 275.59 136.525 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "ddc3836c-dd5b-4aa8-99dc-34e7a355f78e")
+	)
+	(text ".step param RC1 list 460 510 560"
+		(exclude_from_sim no)
+		(at 233.045 147.955 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "df398227-f770-42ec-96ad-252b866a8cc9")
+	)
+	(text ".param RE=390"
+		(exclude_from_sim no)
+		(at 233.68 118.11 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "e3ef97dc-94b5-4bb4-997b-6b5e6bca3436")
+	)
+	(text ".dc Vi 6.6 7\n.param RL=3.33"
+		(exclude_from_sim no)
+		(at 276.225 111.8616 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left top)
+		)
+		(uuid "f805922a-c400-4f9d-a0d8-45b097eb18ec")
+	)
+	(text ".param RB1=51"
+		(exclude_from_sim no)
+		(at 233.68 120.65 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "fa893fbb-8358-4cfd-8fe9-e0ee76ddd883")
+	)
+	(text "Tensión de salida"
+		(exclude_from_sim no)
+		(at 231.775 81.915 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "fc4c1065-3332-4b9d-9240-0f45067f7ef7")
+	)
+	(global_label "vref"
+		(shape bidirectional)
+		(at 36.83 93.98 90)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "9f980b02-a634-4e95-98cd-b9b5aed4a55c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "vo"
+		(shape bidirectional)
+		(at 175.26 68.58 90)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "ba59bbbb-3a46-442e-bc68-27dbe603fe0f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 175.26 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "vi"
+		(shape bidirectional)
+		(at 53.34 59.69 90)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left)
+		)
+		(uuid "bd18fe59-7f5d-4f1d-bbb4-c4b5654f6b0e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.34 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:voltage")
+		(at 36.83 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f312631-4d53-4208-be6a-73a6207c1c3a")
+		(property "Reference" "VREF1"
+			(at 38.735 97.79 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.56"
+			(at 38.735 108.585 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 36.83 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value2" "AC 0"
+			(at 36.83 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 36.83 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "type=\"V\" model=\"${VALUE} ${VALUE2}\" "
+			(at 36.83 96.52 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6e9c5d4e-8eab-4128-801e-1d46a6888427")
+		)
+		(pin "1"
+			(uuid "cd3fde8f-6e3d-4353-a31c-19c39dbab10c")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "VREF1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:pnp")
+		(at 90.17 80.01 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "344e83ea-aa04-4d66-bf3a-1f8618cbccc5")
+		(property "Reference" "Q5"
+			(at 96.8502 77.47 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC557C"
+			(at 96.8502 74.5998 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 90.17 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 90.17 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 90.17 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"BC557C\""
+			(at 90.17 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5a75ea6-1195-4742-a3e2-58d843646f96")
+		)
+		(pin "2"
+			(uuid "1f684fda-170a-4bdf-841d-dc4c8d4bd2d8")
+		)
+		(pin "3"
+			(uuid "e9691554-8744-483e-914b-12c52dce7d21")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 160.02 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "35524a1e-6cfa-47ad-9ca8-2f13d7edab32")
+		(property "Reference" "RD2"
+			(at 162.8902 114.935 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 162.8902 117.8052 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 160.02 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 160.02 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 160.02 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "50b23730-5969-472f-b0f1-7a52f532c94a")
+		)
+		(pin "1"
+			(uuid "ad4bdfd4-eead-4df7-9c38-d3879a0fe24b")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "RD2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d6c45f6-ee6c-4960-906f-31ba1f69413b")
+		(property "Reference" "#PWR04"
+			(at 127 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c91723ff-f5e1-4e5b-bd2e-fa0e7802df1c")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 115.57 50.8 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3dd92032-95ca-4dfb-91d0-c25c662e754a")
+		(property "Reference" "H4"
+			(at 118.11 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 118.11 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad"
+			(at 115.57 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 115.57 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:pnp")
+		(at 146.05 73.66 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43032689-722c-417a-97df-a66fc73fcdb3")
+		(property "Reference" "Q3"
+			(at 143.51 66.9798 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D45H11"
+			(at 140.6398 66.9798 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 146.05 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 146.05 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 146.05 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"D45H11\""
+			(at 146.05 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ae2d76d6-73f9-4e1a-9344-3096878a78c2")
+		)
+		(pin "1"
+			(uuid "abfc7583-b42e-40d1-a5fc-bd7f656d6ff6")
+		)
+		(pin "3"
+			(uuid "cd80c581-b9c9-4d86-8674-a6638d2cd936")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 59.69 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "439d7072-29ed-401b-8d4b-8b395a3a5b54")
+		(property "Reference" "R2"
+			(at 62.5602 127.635 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "390"
+			(at 62.5602 130.5052 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 59.69 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 59.69 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 59.69 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c01dc9f1-7599-41e6-8f5e-4944f0509acb")
+		)
+		(pin "2"
+			(uuid "593e7741-5782-487f-8e86-9660bf689614")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 59.69 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "445596c7-fce7-4e1a-8ef9-3264854d0723")
+		(property "Reference" "R1"
+			(at 62.5602 103.505 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 62.5602 106.3752 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 59.69 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 59.69 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 59.69 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f993104-2e5a-41cf-b619-7e18ae8f9a76")
+		)
+		(pin "2"
+			(uuid "0d505fad-fe95-4d63-a188-1b72b1163392")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 93.98 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4757a833-e84b-4ae9-a903-5337de1fce39")
+		(property "Reference" "RC2"
+			(at 96.8502 62.865 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "510"
+			(at 96.8502 65.7352 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 93.98 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 93.98 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 93.98 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b68608f8-df9a-403a-af77-c4cc9c3d3765")
+		)
+		(pin "2"
+			(uuid "b81a45fd-0be6-4a37-a351-8eb011d61c08")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "RC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 173.99 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4786319a-10c2-4aef-bb80-ed090a7d61be")
+		(property "Reference" "RL1"
+			(at 176.8602 74.295 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50"
+			(at 176.8602 77.1652 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 173.99 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 173.99 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 173.99 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bbd4cea7-0f31-44fc-afae-fe2a696fb435")
+		)
+		(pin "1"
+			(uuid "2eee01ba-45f2-496f-b724-3051d6e17ed5")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "RL1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:npn")
+		(at 146.05 82.55 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4960b607-4c44-4bfe-8d6f-57f7128c03f8")
+		(property "Reference" "Q2"
+			(at 148.59 78.105 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N3019"
+			(at 151.4602 78.105 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-39-3"
+			(at 146.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 146.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 146.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"2N3019\""
+			(at 146.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ccba15a5-8451-4db6-a363-bc12c2cb57e2")
+		)
+		(pin "2"
+			(uuid "ec132354-d125-4ce1-8ad4-4824617e2865")
+		)
+		(pin "1"
+			(uuid "5d7ea83b-cfae-4d19-b57b-2feecc0c1e52")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e0eceb3-6ebb-4342-9019-8c08ad6fa509")
+		(property "Reference" "#PWR02"
+			(at 60.96 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ee3f983-0011-428d-a682-d537da0e2557")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:pnp")
+		(at 113.03 90.17 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e6da63d-baed-4f04-8c09-91c57c843d43")
+		(property "Reference" "Q8"
+			(at 119.7102 87.63 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC557C"
+			(at 119.7102 84.7598 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 113.03 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 113.03 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"BC557C\""
+			(at 113.03 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5fdcd02f-387a-4a7f-969a-984ac6e0e245")
+		)
+		(pin "1"
+			(uuid "7b2c0ea5-1f0f-4c8c-9a3e-d32594836efb")
+		)
+		(pin "3"
+			(uuid "b41db3f6-13f5-4539-8bc7-016d8ec8663b")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:voltage")
+		(at 53.34 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "745435a7-e0a2-47d2-a875-2c986da5373f")
+		(property "Reference" "VI1"
+			(at 55.245 64.77 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "6.8"
+			(at 55.245 67.0052 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 53.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 53.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "type=\"V\" model=\"${VALUE}\" "
+			(at 53.34 63.5 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8e0504f-149d-4669-8891-c1c13095d9bb")
+		)
+		(pin "2"
+			(uuid "13a9251b-7490-492f-8c32-f5fb87c702f2")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "VI1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 36.83 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97f7e25a-6f31-4b76-9e9a-efc6923d6c0f")
+		(property "Reference" "#PWR07"
+			(at 36.83 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 36.83 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 36.83 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72bb378c-f65c-416f-a70f-7ab1db4898dd")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 54.61 52.07 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1d63b49-7544-4bfc-a329-6f2f16c178d2")
+		(property "Reference" "H1"
+			(at 57.15 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 57.15 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad"
+			(at 54.61 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 54.61 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:npn")
+		(at 113.03 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a2d13690-bb26-4036-9efe-0fe724272ec9")
+		(property "Reference" "Q7"
+			(at 117.475 118.11 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547C"
+			(at 117.475 120.9802 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 113.03 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 113.03 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"BC547C\""
+			(at 113.03 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "89fc22bd-7d9d-4df5-8828-088a21383f03")
+		)
+		(pin "3"
+			(uuid "b5bac649-8cbb-405e-82b1-3c11c521148c")
+		)
+		(pin "1"
+			(uuid "a7c5e231-1325-41bd-aaf2-cf6cadd0f618")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 124.46 107.95 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1c467b5-203b-43b0-97a3-d1502face763")
+		(property "Reference" "JP1"
+			(at 124.46 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Bridged"
+			(at 124.46 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
+			(at 124.46 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 124.46 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e8d560f-2cc6-468e-baf6-ce0b59628a12")
+		)
+		(pin "2"
+			(uuid "f4ab8c86-84ae-498c-88a8-343ff83da140")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b41b367b-d2ed-4ae0-9fc5-687197b808c5")
+		(property "Reference" "#PWR05"
+			(at 161.29 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.29 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 161.29 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9155531f-c218-4c89-8009-681f0bae1c40")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:npn")
+		(at 78.74 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba301b9b-77f2-4df0-a9fa-66f990699b9d")
+		(property "Reference" "Q9"
+			(at 83.185 118.11 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547C"
+			(at 83.185 120.9802 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 78.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 78.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"BC547C\""
+			(at 78.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02367e7f-1585-4bcf-af73-53b1c5a8e4da")
+		)
+		(pin "2"
+			(uuid "f0c17468-fee5-4756-bb76-7da781428adc")
+		)
+		(pin "3"
+			(uuid "8aac6602-649d-4584-9d89-ad0df1f0409a")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "Q9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:npn")
+		(at 66.04 115.57 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c04b5ab8-cba1-49e2-9f79-3a2d4bcf894e")
+		(property "Reference" "Q10"
+			(at 61.595 118.11 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547C"
+			(at 61.595 120.9802 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 66.04 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 66.04 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"BC547C\""
+			(at 66.04 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "0c8d1b17-cf48-479a-a478-574c3180a8cc")
+		)
+		(pin "2"
+			(uuid "2e61cd9c-e153-4585-8a08-0b1a1e342bf4")
+		)
+		(pin "1"
+			(uuid "f6c5f29f-47a0-42a8-8987-659c91476da3")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "Q10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 95.25 86.36 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5284263-85a3-48d4-a5e8-1645fb555a67")
+		(property "Reference" "JP2"
+			(at 95.25 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Bridged"
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
+			(at 95.25 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 95.25 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "947c0666-5f26-4e85-8682-b60c75d9d573")
+		)
+		(pin "2"
+			(uuid "c75320c1-2311-4a4b-91bc-8e2a71b9d52f")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:pnp")
+		(at 76.2 80.01 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c7b785e8-9b78-4446-9910-0e5a7794f0e9")
+		(property "Reference" "Q6"
+			(at 69.5198 77.47 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC557C"
+			(at 69.5198 74.5998 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 76.2 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 76.2 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"BC557C\""
+			(at 76.2 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "534a8538-53cf-4d35-9565-42f3106c1b91")
+		)
+		(pin "2"
+			(uuid "9c14bf4f-acf6-4c84-b4cb-fc8f73e502e9")
+		)
+		(pin "3"
+			(uuid "0d4932a8-97e0-49ba-89d6-cfeb644fa9ca")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 116.84 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d24ed8bc-a08e-47b1-a3c5-d52f89400d59")
+		(property "Reference" "RB2"
+			(at 119.7102 127.635 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.8k"
+			(at 119.7102 130.5052 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "af4d24ec-05d1-4847-86e2-2e1f3633530a")
+		)
+		(pin "1"
+			(uuid "387ee987-1c51-45c4-bc86-8499afaa032d")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "RB2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:npn")
+		(at 66.04 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3bc2e79-baea-4469-8cf1-9e81e83ea09a")
+		(property "Reference" "Q1"
+			(at 70.485 92.71 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547C"
+			(at 70.485 95.5802 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"BC547C\""
+			(at 66.04 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "beb33f49-2066-4189-9c8e-6fc315217504")
+		)
+		(pin "1"
+			(uuid "cbccd04f-3df0-4a2b-8569-59be9575e94a")
+		)
+		(pin "3"
+			(uuid "61ace32c-0bc5-49a0-a797-851cdcbbe364")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:npn")
+		(at 100.33 90.17 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e06c154c-c025-4cfe-be7e-3b3b3a204786")
+		(property "Reference" "Q4"
+			(at 95.885 92.71 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547C"
+			(at 95.885 95.5802 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 100.33 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 100.33 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"BC547C\""
+			(at 100.33 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b665be00-0599-4aa3-b6a0-f5346dd2aae6")
+		)
+		(pin "2"
+			(uuid "9ce7f7ee-c41e-451e-a5e8-bdcb2682c7d6")
+		)
+		(pin "3"
+			(uuid "f512b672-a6f9-430b-a3cb-5ba3a3991c68")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 53.34 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5670f9c-c714-46f1-8b83-d4dcb530ad34")
+		(property "Reference" "#PWR01"
+			(at 53.34 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 53.34 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e50892a9-bcc6-42c0-a00c-a01a6576dcd1")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9d9a27c-05ae-441e-998b-1c54a8883ccf")
+		(property "Reference" "#PWR03"
+			(at 83.82 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "045bd7c8-22c0-4f8a-857d-408721afe254")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec2e5ae3-754b-49c5-ba7d-cf9188d6176b")
+		(property "Reference" "#PWR06"
+			(at 175.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87617347-e13d-49f5-8e7c-8c6e5b3cd032")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 95.25 52.07 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee6a474b-f431-4a40-9909-df6eec24982d")
+		(property "Reference" "H3"
+			(at 97.79 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 97.79 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad"
+			(at 95.25 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 95.25 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 116.84 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0ee515a-11ad-4875-a6f6-fb9ca692ed45")
+		(property "Reference" "RB1"
+			(at 119.7102 69.215 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "51"
+			(at 119.7102 72.0852 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 116.84 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 116.84 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 116.84 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a2dd5d0-8e81-45c5-bfc1-5cc324e7ce13")
+		)
+		(pin "2"
+			(uuid "4b241ba3-32c3-4dca-8b9e-866a03d3ed52")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "RB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 82.55 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f3237514-25bc-4372-8a52-c9c78f275671")
+		(property "Reference" "RE1"
+			(at 85.4202 127.635 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "390"
+			(at 85.4202 130.5052 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 82.55 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 82.55 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 82.55 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 82.55 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af32e570-331a-451c-9982-70582b7bc039")
+		)
+		(pin "2"
+			(uuid "02e69f42-cf27-426b-8990-d7544ac25b53")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "RE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 76.2 52.07 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f943eb9c-66fb-484c-961d-76394804c69e")
+		(property "Reference" "H2"
+			(at 78.74 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 78.74 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad"
+			(at 76.2 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 76.2 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 69.85 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc71d103-8596-4517-a0d6-8bf0934312bd")
+		(property "Reference" "RC1"
+			(at 72.7202 62.865 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "510"
+			(at 72.7202 65.7352 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 69.85 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 69.85 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 69.85 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7fc7b5b4-5221-4cae-8002-6010b893ee2a")
+		)
+		(pin "2"
+			(uuid "a101a21f-d2ad-4031-98a9-3874a8a8941e")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "RC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 160.02 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc824f6a-0487-41de-aad4-9fb39a253a89")
+		(property "Reference" "RD1"
+			(at 162.8902 98.425 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 162.8902 101.2952 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 160.02 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 160.02 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 160.02 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8dccfe7b-2299-4ff0-95b8-d8972352a61f")
+		)
+		(pin "1"
+			(uuid "48913638-45b8-426c-8ae1-8b660c019cf1")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+					(reference "RD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
