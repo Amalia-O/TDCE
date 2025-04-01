@@ -1,25 +1,81 @@
 Circuit: * C:\Users\usuario\137\Facultad\circuitos 2\TDCE\Etapa lineal.asc
 
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Bipolar Transistors ---
+Name:       q8          q5          q6          q3          q2
+Model:    bc557c      bc557b      bc557b      2sb688      bc547b
+Ib:      -3.83e-04   -7.67e-13    4.73e-12   -7.43e-03    2.47e-05
+Ic:      -8.89e-02   -1.33e-11   -2.22e-11   -5.59e-01    7.43e-03
+Vbe:     -8.04e-01   -1.54e-01   -1.54e-01   -7.65e-01    6.93e-01
+Vbc:      2.21e+00    0.00e+00    5.20e+00    7.50e+00   -6.81e+00
+Vce:     -3.02e+00   -1.54e-01   -5.36e+00   -8.26e+00    7.50e+00
+BetaDC:   2.32e+02    1.74e+01   -4.69e+00    7.52e+01    3.01e+02
+Gm:       2.21e+00    5.28e-10    6.61e-10    2.16e+01    2.71e-01
+Rpi:      6.83e+01    5.67e+10    5.67e+10    3.48e+00    1.06e+03
+Rx:       1.00e+00    1.00e+00    1.00e+00    0.00e+00    1.00e+00
+Ro:       2.84e+02    4.71e+11    1.52e+12    1.92e+02    9.20e+03
+Cbe:      3.67e-09    1.37e-11    1.37e-11    4.16e-08    1.89e-10
+Cbc:      2.43e-12    6.79e-12    1.66e-12    2.18e-12    9.83e-13
+Cjs:      0.00e+00    0.00e+00    0.00e+00    2.00e-12    0.00e+00
+BetaAC:   1.51e+02    3.00e+01    3.75e+01    7.52e+01    2.88e+02
+Cbx:      1.43e-12    4.01e-12    9.81e-13    0.00e+00    6.04e-13
+Ft:       9.57e+07    3.43e+00    6.43e+00    8.27e+07    2.27e+08
 
-vol1rl: v(vo)=4.97814 at 9.3
-vol2rl: v(vo)=4.97814 at 9.7
-reglin: ((vol2rl - vol1rl) / 0.4)=1.43051e-005
+Name:       q13         q11         q12         q10         q9
+Model:    bc547c      bc547c      bc547c      bc547c      bc547c
+Ib:      -1.59e-12    7.13e-12    3.11e-04    8.46e-07    8.46e-07
+Ic:       1.64e-12    2.54e-09    8.87e-02    3.84e-04    3.84e-04
+Vbe:     -8.39e-06    2.84e-01    7.74e-01    5.97e-01    5.97e-01
+Vbc:     -1.56e+00   -1.28e+00   -1.15e+00    0.00e+00    1.64e-02
+Vce:      1.56e+00    1.56e+00    1.93e+00    5.97e-01    5.80e-01
+BetaDC:  -1.03e+00    3.56e+02    2.85e+02    4.54e+02    4.53e+02
+Gm:       1.84e-12    9.70e-08    2.44e+00    1.46e-02    1.46e-02
+Rpi:      9.36e+11    3.64e+09    8.41e+01    3.10e+04    3.09e+04
+Rx:       1.00e+00    1.00e+00    1.00e+00    1.00e+00    1.00e+00
+Ro:       1.13e+15    2.13e+10    6.04e+02    1.37e+05    1.37e+05
+Cbe:      1.23e-11    1.56e-11    1.04e-08    3.72e-11    3.72e-11
+Cbc:      1.49e-12    1.57e-12    1.64e-12    2.74e-12    2.80e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   1.72e+00    3.53e+02    2.05e+02    4.53e+02    4.53e+02
+Cbx:      9.18e-13    9.64e-13    1.01e-12    1.68e-12    1.72e-12
+Ft:       1.63e-02    8.50e+02    3.74e+07    5.59e+07    5.58e+07
+
+Name:       q7          q4          q1
+Model:    bc547c      bc547c      bc547c
+Ib:       4.80e-07   -1.03e-11    8.05e-07
+Ic:       2.21e-04    9.37e-12    3.83e-04
+Vbe:      5.82e-01   -9.65e-01    5.95e-01
+Vbc:     -9.47e-01   -9.35e+00   -2.58e+00
+Vce:      1.53e+00    8.38e+00    3.18e+00
+BetaDC:   4.62e+02   -9.06e-01    4.76e+02
+Gm:       8.46e-03    1.93e-28    1.46e-02
+Rpi:      5.46e+04    1.00e+12    3.25e+04
+Rx:       1.00e+00    1.00e+00    1.00e+00
+Ro:       2.42e+05    8.34e+30    1.44e+05
+Cbe:      3.34e-11    8.75e-12    3.71e-11
+Cbc:      1.68e-12    9.33e-13    1.32e-12
+Cjs:      0.00e+00    0.00e+00    0.00e+00
+BetaAC:   4.62e+02    1.93e-16    4.76e+02
+Cbx:      1.03e-12    5.74e-13    8.08e-13
+Ft:       3.73e+07    1.55e-02    5.92e+07
 
 
-Date: Tue Apr 01 13:07:05 2025
-Total elapsed time: 0.071 seconds.
+
+Date: Tue Apr 01 15:13:27 2025
+Total elapsed time: 1.525 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 2068
+totiter = 726
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
-matrix size = 60
-fillins = 64
+matrix size = 61
+fillins = 56
 solver = Normal
-Matrix Compiler1: 8.58 KB object code size  1.3/0.6/[0.3]
-Matrix Compiler2: 6.57 KB object code size  0.4/0.6/[0.2]
+Matrix Compiler1: 8.12 KB object code size
+Matrix Compiler2: 6.51 KB object code size  0.7/1.0/[0.5]
 

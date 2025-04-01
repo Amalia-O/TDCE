@@ -2,13 +2,13 @@
 Vi vi 0 {Vi}
 Vref vref 0 {VREF} AC 0
 RC1 vi N002 {RC1}
-RD1 vo V_fc {RD1}
-RD2 V_fc 0 {RD2}
+RD1 vo V_f {RD1}
+RD2 V_f 0 {RD2}
 RL vo 0 {RL}
 Q1 N011 vref N012 0 BC547C
 Q2 N001 V_amp v_paso 0 BC547B
 Q3 v_paso N001 vi 0 2SB688
-Q4 N005 V_fc N012 0 BC547C
+Q4 N005 V_f N012 0 BC547C
 RE1 N015 0 {RE}
 RC2 vi N003 {RC2}
 Q6 N011 N005 N002 0 BC557B
@@ -49,10 +49,7 @@ R11 N008 0 {ALC_R2}
 * Generador
 * Eficiencia
 * Regulacion de linea
-.dc Vi 0 10
-.meas DC Vol1rl FIND V(vo) AT=9.3
-.meas DC Vol2rl FIND V(vo) AT=9.7
-.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)
+* .dc Vi 0 10\n \n.meas DC Vol1rl FIND V(vo) AT=9.3\n.meas DC Vol2rl FIND V(vo) AT=9.7\n.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)
 * .op\n.step param RL list 3.33 500\n \n.meas OP Vo1rc FIND V(vo) AT 500\n.meas OP Vo2rc FIND V(vo) AT 3.33\n.meas OP Io1rc FIND I(RL) AT 500\n.meas OP Io2rc FIND I(RL) AT 3.33\n.meas OP RegCar PARAM (-(Vo2rc - Vo1rc) / (Io2rc - Io1rc) )
 .param RC1=500
 * Generales
@@ -71,12 +68,13 @@ R11 N008 0 {ALC_R2}
 .param BETA 458.7
 * .step param BETA list 420 520 800
 .model 2SB688 PNP(Bf=70 Br=1 Is=73f Eg=1.11 Cjc=4.8p Cje=10p Vaf=100 Tf=1.923n Tr=10n Mjc=.330 Vjc=.75 Mje=.33 Vje=.75 Cjs=2p )
-* .op\n.step dec param RL 500 0.1m 5
+.op
+.step dec param RL 500 0.1m 5
 * Limitador de corriente
 * Modelos
 * .step param RC2 list 1k 2k 5k
 * Tension esperada
-* .op\n.step param RL 3.33 500 10\n.meas OP VoMin MIN V(vo)\n.meas OP VoMax MAX V(vo)
+* .op\n.step param RL 3.33 500 10\n \n.meas OP VoMin MIN V(vo) - 5\n.meas OP VoMax MAX V(vo) - 5\n.meas OP diff PARAM max(abs(VoMin), abs(VoMax))
 .param CL=2.2u
 .param RD1=2.2k
 * .step dec param RD1 1 10k 4
@@ -96,26 +94,25 @@ R11 N008 0 {ALC_R2}
 * Realimentador tension
 .param RD2=1k
 * .step dec param RD2 1 10k 4
-* Llave de seleccion
 .param ALC_C1=1k
 .param ALC_C2=1k
 .param ALC_R1=3.9k
 .param ALC_R2=1.8k
 * .step param ALC_C1 list 250 500 1k 2k
 * .step param ALC_C2 list 500 1k
-* .step param ALC_R1 list 100k 200k 300k 400k 500k
-* .step param ALC_R2 1.5k 2.5k 100
-.param ALC_R3=510
-* .step param ALC_R3 list 510 680 820 1k 1,5k 2.2k
+* .step param ALC_R1 list 2.7k 3.3k 3.9k 4.7k
+* .step param ALC_R2 list 1.2k 1.5k 1.8k 2.2k 2.7k 3.3k
+.param ALC_R3=3.3k
+* .step param ALC_R3 list 2.2k 2.7k 3.3k 3.9k 4.7k 5.1k 5.6k 6.8k
 * Corriente esperada
-* .dc Vi 9.3 9.7\n \n.meas DC IoMin MIN I(rl)\n.meas DC IoMax MAX I(rl)\n.meas DC diff PARAM IoMax - IoMin
+* .dc Vi 9.3 9.7\n \n.meas DC IoMin MIN I(rl) - 1.5\n.meas DC IoMax MAX I(rl) - 1.5\n.meas DC diff PARAM max(abs(IoMin), abs(IoMax))
 * Barrido de tension
 * .dc Vi 0 10
 * Llave de seleccion
-.param RP1=4.7k
+.param RP1=100
 * .step param RP1 list 1k 2k 2.5k  5k
 * Limitador de corriente
-.param RP2=4.7k
+.param RP2=180
 * .step param RP1 list 1k 2k 2.5k  5k
 .backanno
 .end
