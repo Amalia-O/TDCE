@@ -1,51 +1,60 @@
 * C:\Users\usuario\137\Facultad\circuitos 2\TDCE\Etapa lineal.asc
 Vi vi 0 {Vi}
 Vref vref 0 {VREF} AC 0
-RC1 vi N002 {RC1}
+RC1 vi N003 {RC1}
 RD1 vo V_f {RD1}
 RD2 V_f 0 {RD2}
 RL vo 0 {RL}
-Q1 N007 vref N008 0 BC547C
-Q2 N001 V_amp v_paso 0 BC547B
-Q3 v_paso N001 vi 0 2SB688
-Q4 N005 V_f N008 0 BC547C
-RE1 N011 0 {RE}
-RC2 vi N003 {RC2}
-Q6 N007 N005 N002 0 BC557B
-Q5 N005 N005 N003 0 BC557B
-Q7 V_amp N009 N012 0 BC547C
-RB2 N012 0 {RB2}
-RB1 vi N006 {RB1}
-Q8 V_amp N007 N006 0 BC557C
-Q9 N008 N009 N011 0 BC547C
-Q10 N009 N009 N010 0 BC547C
-R1 vref N009 1.5k
-R2 N010 0 {RE}
+Q1 N012 vref N015 0 BC547C
+Q2 N002 V_amp v_paso 0 BC547B
+Q3 v_paso N002 vi 0 2SB688
+Q4 N006 V_f N015 0 BC547C
+RE1 N018 0 {RE}
+RC2 vi N004 {RC2}
+Q6 N012 N006 N003 0 BC557B
+Q5 N006 N006 N004 0 BC557B
+Q7 V_amp N016 N019 0 BC547C
+RB2 N019 0 {RB2}
+RB1 vi N011 {RB1}
+Q8 V_amp N012 N011 0 BC557C
+Q9 N015 N016 N018 0 BC547C
+Q10 N016 N016 N017 0 BC547C
+R1 vref N016 1.5k
+R2 N017 0 {RE}
 R5 vo V_paso {RS}
 CL vo 0 {CL}
-RP3 V_paso N004 {RP1}
-RP4 N004 0 {RP2}
-Q12 V_amp N004 vo 0 BC547C
+RP3 V_paso N005 {RP1}
+RP4 N005 0 {RP2}
+Q12 V_amp N005 vo 0 BC547C
+Q11 N007 N009 V_f 0 BC547C
+Q13 N008 N010 V_f 0 BC547C
+R3 vo N010 {ALC_R1}
+R4 N010 V_f {ALC_R2}
+R6 vref N007 {ALC_C1}
+R7 N008 vref {ALC_C2}
+R8 V_paso N009 {ALC_R1}
+R9 N009 0 {ALC_R2}
 .model NPN NPN
 .model PNP PNP
 .lib C:\Users\usuario\Documents\LTspiceXVII\lib\cmp\standard.bjt
 * .step param RC1 list 500 1k
 * Regulacion de carga
 * Transistor de paso
-* Realimentador\ntension
+* Realimentador tension
 * Carga
 * Amplificador
 * Alimentacion
 * Generador
-* .step param VREF 1.5 1.6 0.01
 * Eficiencia
 * Regulacion de linea
-* .dc Vi 0 10\n.param RL=3.33\n \n.meas DC Vol1rl FIND V(vo) AT=9.3\n.meas DC Vol2rl FIND V(vo) AT=9.7\n.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)
+* .dc Vi 0 10\n \n.meas DC Vol1rl FIND V(vo) AT=9.3\n.meas DC Vol2rl FIND V(vo) AT=9.7\n.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)
 * .op\n.step param RL list 3.33 500\n \n.meas OP Vo1rc FIND V(vo) AT 500\n.meas OP Vo2rc FIND V(vo) AT 3.33\n.meas OP Io1rc FIND I(RL) AT 500\n.meas OP Io2rc FIND I(RL) AT 3.33\n.meas OP RegCar PARAM (-(Vo2rc - Vo1rc) / (Io2rc - Io1rc) )
 .param RC1=500
-* Parametros generales
-* Pruebas
-* .dc Vi 9.3 9.7\n.param RL=3.33\n \n.meas DC EfiMin MIN -100*(V(vo)*I(RL))/(V(vi)*I(Vi))\n.meas DC EfiMax MAX -100*(V(vo)*I(RL))/(V(vi)*I(Vi))
+* Generales
+* Amplificador
+.dc Vi 9.3 9.7
+.meas DC EfiMin MIN -100*(V(vo)*I(RL))/(V(vi)*I(Vi))
+.meas DC EfiMax MAX -100*(V(vo)*I(RL))/(V(vi)*I(Vi))
 .param VREF=1.56
 .param Vi=9.5
 * .step param RE list 500 1k 2k
@@ -66,19 +75,36 @@ Q12 V_amp N004 vo 0 BC547C
 * Tension esperada
 * .op\n.step param RL 3.33 500 10\n.meas OP VoMin MIN V(vo)\n.meas OP VoMax MAX V(vo)
 .param CL=2.2u
-.param RD1=2.2k RD2=1k
-* .step dec param RD2 1 10k 4
+.param RD1=2.2k
+* .step dec param RD1 1 10k 4
 .param RS=2.2
-.param RP1=4.7k RP2=4.7k
+.param RP1=4.7k
 * .step param RP1 list 1k 2k 2.5k  5k
 * Relimentador\ncorriente
 * .step param RS list 1.5 1.7 2.2 2.5
 * Limitador de corriente
 * LDO
-.dc Vi 0 10
+* .dc Vi 0 10\n \n.meas DC VpasoMax MAX V(v_paso)\n.meas DC ViMin FIND V(vi) WHEN V(v_paso) = VpasoMax - 0.05\n.meas DC dropout PARAM ViMin - VpasoMax
+* Amplificador lazo corriente
+* .step param VREF 1.5 1.6 0.01
 .param RL=3.33
-.meas DC VpasoMax MAX V(v_paso)
-.meas DC ViMin FIND V(vi) WHEN V(v_paso) = VpasoMax - 0.05
-.meas DC LDO PARAM ViMin - VpasoMax
+* Amplificador lazo corriente
+* Relimentador corriente
+* Parametros
+* Metricas
+* Realimentador tension
+.param RD2=1k
+* .step dec param RD2 1 10k 4
+* Limitador de corriente
+.param RP2=4.7k
+* .step param RP1 list 1k 2k 2.5k  5k
+.param ALC_C1=500
+.param ALC_C2=500
+.param ALC_R1=500k
+.param ALC_R2=1k
+* .step param ALC_C1 list 250 500 1k 2k
+* .step param ALC_C2 list 500 1k
+* .step param ALC_R1 list 100k 200k 300k 400k 500k
+* .step param ALC_R2 list 2k 5k 10k
 .backanno
 .end

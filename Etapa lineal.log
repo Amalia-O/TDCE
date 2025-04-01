@@ -1,25 +1,44 @@
 Circuit: * C:\Users\usuario\137\Facultad\circuitos 2\TDCE\Etapa lineal.asc
 
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+Gmin = 1.89714e-008
+Gmin = 2.03704e-009
+Gmin = 2.18725e-010
+Gmin = 2.34854e-011
+Gmin = 2.52173e-012
+Gmin = 2.70769e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
 
-vpasomax: MAX(v(v_paso))=8.29545 FROM 0 TO 10
-vimin: v(vi)=9.10814 at 9.10814
-ldo: vimin - vpasomax=0.812685
+
+efimin: MIN(-100*(v(vo)*i(rl))/(v(vi)*i(vi)))=51.2167 FROM 9.3 TO 9.7
+efimax: MAX(-100*(v(vo)*i(rl))/(v(vi)*i(vi)))=53.4195 FROM 9.3 TO 9.7
 
 
-Date: Tue Apr 01 09:40:08 2025
-Total elapsed time: 0.074 seconds.
+Date: Tue Apr 01 12:11:57 2025
+Total elapsed time: 0.097 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 2065
+totiter = 2501
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
-matrix size = 50
-fillins = 58
+matrix size = 60
+fillins = 65
 solver = Normal
-Matrix Compiler1: 7.20 KB object code size  1.5/0.9/[0.4]
-Matrix Compiler2: 5.45 KB object code size  0.6/1.0/[0.3]
+Matrix Compiler1:     434 opcodes  1.9/1.0/[0.4]
+Matrix Compiler2: 6.67 KB object code size  0.5/0.7/[0.2]
 
