@@ -1,81 +1,25 @@
 Circuit: * C:\Users\usuario\137\Facultad\circuitos 2\TDCE\Etapa lineal.asc
 
-Direct Newton iteration for .op point succeeded.
-Semiconductor Device Operating Points:
-                        --- Bipolar Transistors ---
-Name:       q8          q5          q6          q3          q2
-Model:    bc557c      bc557b      bc557b      2sb688      bc547b
-Ib:      -3.83e-04   -7.53e-13    4.49e-12   -1.72e-02    6.22e-05
-Ic:      -8.41e-02   -1.31e-11   -2.15e-11   -1.27e+00    1.72e-02
-Vbe:     -8.01e-01   -1.52e-01   -1.52e-01   -7.87e-01    7.22e-01
-Vbc:      8.34e-01    0.00e+00    4.96e+00    5.88e+00   -5.16e+00
-Vce:     -1.63e+00   -1.52e-01   -5.11e+00   -6.66e+00    5.88e+00
-BetaDC:   2.20e+02    1.74e+01   -4.79e+00    7.41e+01    2.76e+02
-Gm:       2.09e+00    5.02e-10    6.22e-10    4.92e+01    5.94e-01
-Rpi:      6.83e+01    5.87e+10    5.87e+10    1.51e+00    4.19e+02
-Rx:       1.00e+00    1.00e+00    1.00e+00    0.00e+00    1.00e+00
-Ro:       2.84e+02    4.78e+11    1.60e+12    8.32e+01    3.88e+03
-Cbe:      3.92e-09    1.37e-11    1.37e-11    9.47e-08    3.56e-10
-Cbc:      3.34e-12    6.79e-12    1.69e-12    2.34e-12    1.06e-12
-Cjs:      0.00e+00    0.00e+00    0.00e+00    2.00e-12    0.00e+00
-BetaAC:   1.42e+02    2.94e+01    3.65e+01    7.41e+01    2.49e+02
-Cbx:      1.97e-12    4.01e-12    9.98e-13    0.00e+00    6.53e-13
-Ft:       8.46e+07    3.26e+00    6.04e+00    8.27e+07    2.65e+08
 
-Name:       q13         q11         q12         q10         q9
-Model:    bc547c      bc547c      bc547c      bc547c      bc547c
-Ib:      -1.59e-12    2.88e-12    2.76e-04    8.46e-07    8.46e-07
-Ic:       1.64e-12    1.10e-09    8.38e-02    3.84e-04    3.84e-04
-Vbe:     -6.50e-08    2.62e-01    7.70e-01    5.97e-01    5.97e-01
-Vbc:     -1.56e+00   -1.30e+00   -2.79e+00    0.00e+00    1.63e-02
-Vce:      1.56e+00    1.56e+00    3.56e+00    5.97e-01    5.80e-01
-BetaDC:  -1.03e+00    3.81e+02    3.04e+02    4.54e+02    4.53e+02
-Gm:       1.84e-12    4.19e-08    2.34e+00    1.46e-02    1.46e-02
-Rpi:      9.36e+11    7.71e+09    9.48e+01    3.10e+04    3.09e+04
-Rx:       1.00e+00    1.00e+00    1.00e+00    1.00e+00    1.00e+00
-Ro:       1.13e+15    4.92e+10    6.59e+02    1.37e+05    1.37e+05
-Cbe:      1.23e-11    1.52e-11    5.95e-09    3.72e-11    3.72e-11
-Cbc:      1.49e-12    1.56e-12    1.30e-12    2.74e-12    2.80e-12
-Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-BetaAC:   1.72e+00    3.23e+02    2.22e+02    4.53e+02    4.53e+02
-Cbx:      9.18e-13    9.60e-13    7.99e-13    1.68e-12    1.72e-12
-Ft:       1.63e-02    3.76e+02    6.27e+07    5.59e+07    5.58e+07
-
-Name:       q7          q4          q1
-Model:    bc547c      bc547c      bc547c
-Ib:       4.66e-07   -1.03e-11    8.01e-07
-Ic:       2.22e-04    9.38e-12    3.83e-04
-Vbe:      5.81e-01   -9.65e-01    5.95e-01
-Vbc:     -2.58e+00   -9.35e+00   -2.83e+00
-Vce:      3.16e+00    8.38e+00    3.43e+00
-BetaDC:   4.76e+02   -9.07e-01    4.78e+02
-Gm:       8.48e-03    1.93e-28    1.46e-02
-Rpi:      5.62e+04    1.00e+12    3.27e+04
-Rx:       1.00e+00    1.00e+00    1.00e+00
-Ro:       2.48e+05    8.34e+30    1.45e+05
-Cbe:      3.34e-11    8.75e-12    3.71e-11
-Cbc:      1.32e-12    9.33e-13    1.28e-12
-Cjs:      0.00e+00    0.00e+00    0.00e+00
-BetaAC:   4.76e+02    1.93e-16    4.78e+02
-Cbx:      8.09e-13    5.74e-13    7.89e-13
-Ft:       3.80e+07    1.55e-02    5.93e+07
+vol1rl: v(vo)=4.97814 at 9.3
+vol2rl: v(vo)=4.97814 at 9.7
+reglin: ((vol2rl - vol1rl) / 0.4)=1.43051e-005
 
 
-
-Date: Tue Apr 01 12:47:05 2025
-Total elapsed time: 2.380 seconds.
+Date: Tue Apr 01 13:07:05 2025
+Total elapsed time: 0.071 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 1423
+totiter = 2068
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
 matrix size = 60
-fillins = 65
+fillins = 64
 solver = Normal
-Matrix Compiler1: 7.87 KB object code size
-Matrix Compiler2: 6.67 KB object code size  1.4/1.7/[0.6]
+Matrix Compiler1: 8.58 KB object code size  1.3/0.6/[0.3]
+Matrix Compiler2: 6.57 KB object code size  0.4/0.6/[0.2]
 

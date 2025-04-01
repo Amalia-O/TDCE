@@ -1,41 +1,41 @@
 * C:\Users\usuario\137\Facultad\circuitos 2\TDCE\Etapa lineal.asc
 Vi vi 0 {Vi}
 Vref vref 0 {VREF} AC 0
-RC1 vi N003 {RC1}
-RD1 vo V_f {RD1}
-RD2 V_f 0 {RD2}
+RC1 vi N002 {RC1}
+RD1 vo V_fc {RD1}
+RD2 V_fc 0 {RD2}
 RL vo 0 {RL}
-Q1 N012 vref N014 0 BC547C
-Q2 N002 V_amp v_paso 0 BC547B
-Q3 v_paso N002 vi 0 2SB688
-Q4 N006 V_f N014 0 BC547C
-RE1 N018 0 {RE}
-RC2 vi N004 {RC2}
-Q6 N012 N006 N003 0 BC557B
-Q5 N006 N006 N004 0 BC557B
-Q7 V_amp N016 N019 0 BC547C
-RB2 N019 0 {RB2}
-RB1 vi N011 {RB1}
-Q8 V_amp N012 N011 0 BC557C
-Q9 N014 N016 N018 0 BC547C
-Q10 N016 N016 N017 0 BC547C
-R1 vref N016 1.5k
-R2 N017 0 {RE}
+Q1 N011 vref N012 0 BC547C
+Q2 N001 V_amp v_paso 0 BC547B
+Q3 v_paso N001 vi 0 2SB688
+Q4 N005 V_fc N012 0 BC547C
+RE1 N015 0 {RE}
+RC2 vi N003 {RC2}
+Q6 N011 N005 N002 0 BC557B
+Q5 N005 N005 N003 0 BC557B
+Q7 V_amp N013 N016 0 BC547C
+RB2 N016 0 {RB2}
+RB1 vi N010 {RB1}
+Q8 V_amp N011 N010 0 BC557C
+Q9 N012 N013 N015 0 BC547C
+Q10 N013 N013 N014 0 BC547C
+R1 vref N013 1.5k
+R2 N014 0 {RE}
 R5 vo V_paso {RS}
 CL vo 0 {CL}
-RP3 V_paso N005 {RP1}
-RP4 N005 0 {RP2}
-Q12 V_amp N005 vo 0 BC547C
-Q11 N007 N009 V_f 0 BC547C
-Q13 N008 N010 V_f 0 BC547C
-R3 vo N010 {ALC_R1}
-R4 N010 V_f {ALC_R3}
-R6 vref N007 {ALC_C1}
-R7 N008 vref {ALC_C2}
-R8 V_paso N009 {ALC_R1}
-R9 N009 0 {ALC_R3}
-R10 0 N010 {ALC_R2}
-R11 N009 0 {ALC_R2}
+RP3 V_paso N004 {RP1}
+RP4 N004 0 {RP2}
+Q12 V_amp N004 vo 0 BC547C
+Q11 N006 N008 V_fc 0 BC547C
+Q13 N007 N009 V_fc 0 BC547C
+R3 vo N009 {ALC_R1}
+R4 N009 V_fc {ALC_R3}
+R6 vref N006 {ALC_C1}
+R7 N007 vref {ALC_C2}
+R8 V_paso N008 {ALC_R1}
+R9 N008 0 {ALC_R3}
+R10 0 N009 {ALC_R2}
+R11 N008 0 {ALC_R2}
 .model NPN NPN
 .model PNP PNP
 .lib C:\Users\usuario\Documents\LTspiceXVII\lib\cmp\standard.bjt
@@ -49,7 +49,10 @@ R11 N009 0 {ALC_R2}
 * Generador
 * Eficiencia
 * Regulacion de linea
-* .dc Vi 0 10\n \n.meas DC Vol1rl FIND V(vo) AT=9.3\n.meas DC Vol2rl FIND V(vo) AT=9.7\n.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)
+.dc Vi 0 10
+.meas DC Vol1rl FIND V(vo) AT=9.3
+.meas DC Vol2rl FIND V(vo) AT=9.7
+.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)
 * .op\n.step param RL list 3.33 500\n \n.meas OP Vo1rc FIND V(vo) AT 500\n.meas OP Vo2rc FIND V(vo) AT 3.33\n.meas OP Io1rc FIND I(RL) AT 500\n.meas OP Io2rc FIND I(RL) AT 3.33\n.meas OP RegCar PARAM (-(Vo2rc - Vo1rc) / (Io2rc - Io1rc) )
 .param RC1=500
 * Generales
@@ -68,8 +71,7 @@ R11 N009 0 {ALC_R2}
 .param BETA 458.7
 * .step param BETA list 420 520 800
 .model 2SB688 PNP(Bf=70 Br=1 Is=73f Eg=1.11 Cjc=4.8p Cje=10p Vaf=100 Tf=1.923n Tr=10n Mjc=.330 Vjc=.75 Mje=.33 Vje=.75 Cjs=2p )
-.op
-.step dec param RL 500 0.1m 5
+* .op\n.step dec param RL 500 0.1m 5
 * Limitador de corriente
 * Modelos
 * .step param RC2 list 1k 2k 5k
@@ -79,8 +81,6 @@ R11 N009 0 {ALC_R2}
 .param RD1=2.2k
 * .step dec param RD1 1 10k 4
 .param RS=2.2
-.param RP1=4.7k
-* .step param RP1 list 1k 2k 2.5k  5k
 * Relimentador corriente
 * .step param RS list 1.5 1.7 2.2 2.5
 * Limitador de corriente
@@ -96,9 +96,7 @@ R11 N009 0 {ALC_R2}
 * Realimentador tension
 .param RD2=1k
 * .step dec param RD2 1 10k 4
-* Limitador de corriente
-.param RP2=4.7k
-* .step param RP1 list 1k 2k 2.5k  5k
+* Llave de seleccion
 .param ALC_C1=1k
 .param ALC_C2=1k
 .param ALC_R1=3.9k
@@ -113,5 +111,11 @@ R11 N009 0 {ALC_R2}
 * .dc Vi 9.3 9.7\n \n.meas DC IoMin MIN I(rl)\n.meas DC IoMax MAX I(rl)\n.meas DC diff PARAM IoMax - IoMin
 * Barrido de tension
 * .dc Vi 0 10
+* Llave de seleccion
+.param RP1=4.7k
+* .step param RP1 list 1k 2k 2.5k  5k
+* Limitador de corriente
+.param RP2=4.7k
+* .step param RP1 list 1k 2k 2.5k  5k
 .backanno
 .end
