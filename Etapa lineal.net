@@ -5,10 +5,10 @@ RC1 vi N003 {RC1}
 RD1 vo V_f {RD1}
 RD2 V_f 0 {RD2}
 RL vo 0 {RL}
-Q1 N012 vref N015 0 BC547C
+Q1 N012 vref N014 0 BC547C
 Q2 N002 V_amp v_paso 0 BC547B
 Q3 v_paso N002 vi 0 2SB688
-Q4 N006 V_f N015 0 BC547C
+Q4 N006 V_f N014 0 BC547C
 RE1 N018 0 {RE}
 RC2 vi N004 {RC2}
 Q6 N012 N006 N003 0 BC557B
@@ -17,7 +17,7 @@ Q7 V_amp N016 N019 0 BC547C
 RB2 N019 0 {RB2}
 RB1 vi N011 {RB1}
 Q8 V_amp N012 N011 0 BC557C
-Q9 N015 N016 N018 0 BC547C
+Q9 N014 N016 N018 0 BC547C
 Q10 N016 N016 N017 0 BC547C
 R1 vref N016 1.5k
 R2 N017 0 {RE}
@@ -29,11 +29,13 @@ Q12 V_amp N005 vo 0 BC547C
 Q11 N007 N009 V_f 0 BC547C
 Q13 N008 N010 V_f 0 BC547C
 R3 vo N010 {ALC_R1}
-R4 N010 V_f {ALC_R2}
+R4 N010 V_f {ALC_R3}
 R6 vref N007 {ALC_C1}
 R7 N008 vref {ALC_C2}
 R8 V_paso N009 {ALC_R1}
-R9 N009 0 {ALC_R2}
+R9 N009 0 {ALC_R3}
+R10 0 N010 {ALC_R2}
+R11 N009 0 {ALC_R2}
 .model NPN NPN
 .model PNP PNP
 .lib C:\Users\usuario\Documents\LTspiceXVII\lib\cmp\standard.bjt
@@ -52,9 +54,7 @@ R9 N009 0 {ALC_R2}
 .param RC1=500
 * Generales
 * Amplificador
-.dc Vi 9.3 9.7
-.meas DC EfiMin MIN -100*(V(vo)*I(RL))/(V(vi)*I(Vi))
-.meas DC EfiMax MAX -100*(V(vo)*I(RL))/(V(vi)*I(Vi))
+* .dc Vi 9.3 9.7\n \n.meas DC EfiMin MIN -100*(V(vo)*I(RL))/(V(vi)*I(Vi))\n.meas DC EfiMax MAX -100*(V(vo)*I(RL))/(V(vi)*I(Vi))
 .param VREF=1.56
 .param Vi=9.5
 * .step param RE list 500 1k 2k
@@ -68,7 +68,8 @@ R9 N009 0 {ALC_R2}
 .param BETA 458.7
 * .step param BETA list 420 520 800
 .model 2SB688 PNP(Bf=70 Br=1 Is=73f Eg=1.11 Cjc=4.8p Cje=10p Vaf=100 Tf=1.923n Tr=10n Mjc=.330 Vjc=.75 Mje=.33 Vje=.75 Cjs=2p )
-* .op\n.step dec param RL 500 0.1m 5
+.op
+.step dec param RL 500 0.1m 5
 * Limitador de corriente
 * Modelos
 * .step param RC2 list 1k 2k 5k
@@ -80,7 +81,7 @@ R9 N009 0 {ALC_R2}
 .param RS=2.2
 .param RP1=4.7k
 * .step param RP1 list 1k 2k 2.5k  5k
-* Relimentador\ncorriente
+* Relimentador corriente
 * .step param RS list 1.5 1.7 2.2 2.5
 * Limitador de corriente
 * LDO
@@ -98,13 +99,19 @@ R9 N009 0 {ALC_R2}
 * Limitador de corriente
 .param RP2=4.7k
 * .step param RP1 list 1k 2k 2.5k  5k
-.param ALC_C1=500
-.param ALC_C2=500
-.param ALC_R1=500k
-.param ALC_R2=1k
+.param ALC_C1=1k
+.param ALC_C2=1k
+.param ALC_R1=3.9k
+.param ALC_R2=1.8k
 * .step param ALC_C1 list 250 500 1k 2k
 * .step param ALC_C2 list 500 1k
 * .step param ALC_R1 list 100k 200k 300k 400k 500k
-* .step param ALC_R2 list 2k 5k 10k
+* .step param ALC_R2 1.5k 2.5k 100
+.param ALC_R3=510
+* .step param ALC_R3 list 510 680 820 1k 1,5k 2.2k
+* Corriente esperada
+* .dc Vi 9.3 9.7\n \n.meas DC IoMin MIN I(rl)\n.meas DC IoMax MAX I(rl)\n.meas DC diff PARAM IoMax - IoMin
+* Barrido de tension
+* .dc Vi 0 10
 .backanno
 .end
