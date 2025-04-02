@@ -5,22 +5,22 @@ RC1 vi N002 {RC1}
 RD1 vo V_f {RD1}
 RD2 V_f 0 {RD2}
 RL vo 0 {RL}
-Q1 N011 vref N012 0 BC547C
+Q1 N011 vref N013 0 BC547C
 Q2 N001 V_amp v_paso 0 BC547B
 Q3 v_paso N001 vi 0 2SB688
-Q4 N005 V_f N012 0 BC547C
-RE1 N015 0 {RE}
+Q4 N005 N012 N013 0 BC547C
+RE1 N016 0 {RE}
 RC2 vi N003 {RC2}
 Q6 N011 N005 N002 0 BC557B
 Q5 N005 N005 N003 0 BC557B
-Q7 V_amp N013 N016 0 BC547C
-RB2 N016 0 {RB2}
+Q7 V_amp N014 N017 0 BC547C
+RB2 N017 0 {RB2}
 RB1 vi N010 {RB1}
 Q8 V_amp N011 N010 0 BC557C
-Q9 N012 N013 N015 0 BC547C
-Q10 N013 N013 N014 0 BC547C
-R1 vref N013 1.5k
-R2 N014 0 {RE}
+Q9 N013 N014 N016 0 BC547C
+Q10 N014 N014 N015 0 BC547C
+R1 vref N014 1k
+R2 N015 0 {RE}
 R5 vo V_paso {RS}
 CL vo 0 {CL}
 RP3 V_paso N004 {RP1}
@@ -36,6 +36,7 @@ R8 V_paso N008 {ALC_R1}
 R9 N008 0 {ALC_R3}
 R10 0 N009 {ALC_R2}
 R11 N008 0 {ALC_R2}
+R12 N012 V_f 1k
 .model NPN NPN
 .model PNP PNP
 .lib C:\Users\usuario\Documents\LTspiceXVII\lib\cmp\standard.bjt
@@ -50,7 +51,13 @@ R11 N008 0 {ALC_R2}
 * Eficiencia
 * Regulacion de linea
 * .dc Vi 0 10\n \n.meas DC Vol1rl FIND V(vo) AT=9.3\n.meas DC Vol2rl FIND V(vo) AT=9.7\n.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)
-* .op\n.step param RL list 3.33 500\n \n.meas OP Vo1rc FIND V(vo) AT 500\n.meas OP Vo2rc FIND V(vo) AT 3.33\n.meas OP Io1rc FIND I(RL) AT 500\n.meas OP Io2rc FIND I(RL) AT 3.33\n.meas OP RegCar PARAM (-(Vo2rc - Vo1rc) / (Io2rc - Io1rc) )
+.op
+.step param RL list 3.33 500
+.meas OP Vo1rc FIND V(vo) AT 500
+.meas OP Vo2rc FIND V(vo) AT 3.33
+.meas OP Io1rc FIND I(RL) AT 500
+.meas OP Io2rc FIND I(RL) AT 3.33
+.meas OP RegCar PARAM (-(Vo2rc - Vo1rc) / (Io2rc - Io1rc) )
 .param RC1=500
 * Generales
 * Amplificador
@@ -58,18 +65,14 @@ R11 N008 0 {ALC_R2}
 .param VREF=1.56
 .param Vi=9.5
 * .step param RE list 500 1k 2k
-.param RE=1k
+.param RE=10k
 .param RB1=51
 * .step param RB1 list 46 56
 .param RB2=1.8k
 * .step param RB2 1.5k 3k 500
 .param RC2=500
-.model TBJ-NPN-1 NPN(IS=4.679E-14 NF=1.01 ISE=2.642E-15 NE=1.581 BF={BETA} IKF=0.1371 VAF=52.64 NR=1.019 ISC=2.337E-14 NC=1.164 BR=11.57 IKR=0.1144 VAR=364.5 RB=1 IRB=1.00E-06 RBM=1 RE=0.2598 RC=1 XTB=0 EG=1.11 XTI=3 CJE=1.229E-11 VJE=0.5591 MJE=0.3385 TF=4.689E-10 XTF=160 VTF=2.828 ITF=0.8842 PTF=0 CJC=4.42E-12 VJC=0.1994 MJC=0.2782 XCJC=0.6193 TR=1.00E-32 CJS=0 VJS=0.75 MJS=0.333 FC=0.7936 Vceo=45 Icrating=100m mfg=Philips)
-.param BETA 458.7
-* .step param BETA list 420 520 800
 .model 2SB688 PNP(Bf=70 Br=1 Is=73f Eg=1.11 Cjc=4.8p Cje=10p Vaf=100 Tf=1.923n Tr=10n Mjc=.330 Vjc=.75 Mje=.33 Vje=.75 Cjs=2p )
-.op
-.step dec param RL 500 0.1m 5
+* .op\n.step dec param RL 500 0.1m 5
 * Limitador de corriente
 * Modelos
 * .step param RC2 list 1k 2k 5k
