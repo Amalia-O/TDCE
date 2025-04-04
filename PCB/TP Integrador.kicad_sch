@@ -5,6 +5,142 @@
 	(uuid "103f7a8f-be6d-4c1b-98f8-d46e7455db32")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Jumper:Jumper_2_Bridged"
 			(pin_numbers hide)
 			(pin_names
@@ -1036,6 +1172,42 @@
 			)
 		)
 	)
+	(junction
+		(at 195.58 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ad80ab5-0b75-4b49-8370-5c2b7eccfdd7")
+	)
+	(junction
+		(at 172.72 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e3bab5a-788f-4c1f-ada8-6590936ca654")
+	)
+	(junction
+		(at 209.55 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4da065df-cd60-4cec-9cea-2113b00e86c5")
+	)
+	(junction
+		(at 204.47 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50f5e366-a3fb-41e0-8da6-e2618e3c5e82")
+	)
+	(junction
+		(at 149.86 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a752cd3-34c7-42d2-b6b6-26b8e5281801")
+	)
+	(junction
+		(at 172.72 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb2241a4-1572-43cf-8be6-81d6404ae49f")
+	)
 	(wire
 		(pts
 			(xy 71.12 72.39) (xy 71.12 67.31)
@@ -1118,6 +1290,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 87.63) (xy 195.58 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a8f7f07-b337-40ca-aa92-db96c8f4abf0")
+	)
+	(wire
+		(pts
 			(xy 71.12 90.17) (xy 71.12 86.36)
 		)
 		(stroke
@@ -1138,7 +1320,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 83.82) (xy 175.26 78.74)
+			(xy 209.55 83.82) (xy 209.55 78.74)
 		)
 		(stroke
 			(width 0.1524)
@@ -1165,6 +1347,16 @@
 			(type solid)
 		)
 		(uuid "338ba1d2-0b10-4130-8318-b4dea51880b1")
+	)
+	(wire
+		(pts
+			(xy 209.55 68.58) (xy 223.52 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37581a7f-035c-45da-a85c-2360149cddb6")
 	)
 	(wire
 		(pts
@@ -1198,13 +1390,13 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 68.58) (xy 153.67 68.58)
+			(xy 204.47 68.58) (xy 203.2 68.58)
 		)
 		(stroke
-			(width 0.1524)
-			(type solid)
+			(width 0)
+			(type default)
 		)
-		(uuid "3ece0d5b-fe8a-4776-820f-79722f866fb5")
+		(uuid "3bbe9bf8-cf64-43af-8e53-9ae71bee1675")
 	)
 	(wire
 		(pts
@@ -1258,6 +1450,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 68.58) (xy 195.58 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "48653420-3158-45ea-9f6e-1293bba6380a")
+	)
+	(wire
+		(pts
 			(xy 60.96 115.57) (xy 60.96 113.03)
 		)
 		(stroke
@@ -1278,6 +1480,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 96.52) (xy 204.47 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bfdcd89-5fa7-494d-9c7c-ceaa04b341b5")
+	)
+	(wire
+		(pts
 			(xy 66.04 93.98) (xy 60.96 93.98)
 		)
 		(stroke
@@ -1285,6 +1497,16 @@
 			(type solid)
 		)
 		(uuid "505c8ed2-c9ec-4b66-adc4-2de7da9bcadd")
+	)
+	(wire
+		(pts
+			(xy 186.69 82.55) (xy 186.69 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54d85650-8c19-44ca-8a9a-d19a9b432da7")
 	)
 	(wire
 		(pts
@@ -1348,7 +1570,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 68.58) (xy 161.29 68.58)
+			(xy 209.55 68.58) (xy 204.47 68.58)
 		)
 		(stroke
 			(width 0.1524)
@@ -1365,6 +1587,16 @@
 			(type solid)
 		)
 		(uuid "6f57a480-bc10-4cb3-87a4-20d89115cfbf")
+	)
+	(wire
+		(pts
+			(xy 195.58 68.58) (xy 189.23 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "7517bd59-e289-4fca-bfb9-390eda78a0ab")
 	)
 	(wire
 		(pts
@@ -1418,13 +1650,13 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 96.52) (xy 161.29 68.58)
+			(xy 153.67 68.58) (xy 172.72 68.58)
 		)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
-		(uuid "adb74d82-8daa-4340-818d-2f19cf7cc0b3")
+		(uuid "aaae408c-88bd-4236-b3fd-a9e3bd4253cf")
 	)
 	(wire
 		(pts
@@ -1458,7 +1690,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 95.25) (xy 149.86 82.55)
+			(xy 149.86 95.25) (xy 149.86 87.63)
 		)
 		(stroke
 			(width 0.1524)
@@ -1485,6 +1717,36 @@
 			(type solid)
 		)
 		(uuid "ba375072-46d5-441e-86dc-fed3e5d12b4c")
+	)
+	(wire
+		(pts
+			(xy 190.5 87.63) (xy 195.58 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcd9792e-9235-46a4-9d18-c94752d6f661")
+	)
+	(wire
+		(pts
+			(xy 172.72 74.93) (xy 186.69 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdd999ce-fbfe-4961-a997-3b16c59c0dad")
+	)
+	(wire
+		(pts
+			(xy 182.88 68.58) (xy 172.72 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "be19afa0-a7d0-4240-8b63-165986dc7c98")
 	)
 	(wire
 		(pts
@@ -1515,6 +1777,16 @@
 			(type solid)
 		)
 		(uuid "c4255d61-73c6-4352-b4d6-e0c04ebc489d")
+	)
+	(wire
+		(pts
+			(xy 149.86 87.63) (xy 149.86 82.55)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c57bead6-de90-4408-baaf-b0656cf77217")
 	)
 	(wire
 		(pts
@@ -1588,6 +1860,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 87.63) (xy 182.88 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7684bb1-b848-4b20-acb5-c05cf2132ddd")
+	)
+	(wire
+		(pts
 			(xy 95.25 72.39) (xy 95.25 67.31)
 		)
 		(stroke
@@ -1618,7 +1900,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 72.39) (xy 175.26 68.58)
+			(xy 209.55 72.39) (xy 209.55 68.58)
 		)
 		(stroke
 			(width 0.1524)
@@ -1665,6 +1947,16 @@
 			(type default)
 		)
 		(uuid "f3784310-bb4d-4c51-ac3b-433a78a7bdbe")
+	)
+	(wire
+		(pts
+			(xy 204.47 96.52) (xy 204.47 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f457b104-4451-480d-bacc-08b09342ddb6")
 	)
 	(wire
 		(pts
@@ -1717,61 +2009,6 @@
 		)
 		(uuid "0079fa87-9c2d-4e39-b3fc-dd603b6b9147")
 	)
-	(text ".dc Vi 0 8\n.param RL=3.33\n \n.meas DC Vol1rl FIND V(vo) AT=6.6\n.meas DC Vol2rl FIND V(vo) AT=7\n.meas DC RegLin PARAM ((Vol2rl - Vol1rl) / 0.4)"
-		(exclude_from_sim no)
-		(at 276.225 83.9216 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left top)
-		)
-		(uuid "07ae6098-0b9f-4068-a417-1e0ec0c8f375")
-	)
-	(text ".step param RB1 list 46 56"
-		(exclude_from_sim no)
-		(at 233.68 142.24 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "19f2731f-287d-4565-aa66-c3d23af9b62c")
-	)
-	(text "Regulacion de carga"
-		(exclude_from_sim no)
-		(at 321.31 81.915 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "1eccb613-4579-4dca-8242-5de5be4c7ec0")
-	)
-	(text ".param RB2=1.8k"
-		(exclude_from_sim no)
-		(at 233.68 123.19 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "216fb0d9-02dc-4cdc-8f1b-606d3d748915")
-	)
-	(text "Pruebas"
-		(exclude_from_sim no)
-		(at 234.315 129.54 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "2a01255f-ffe3-4ad0-93bb-de9b0e2d8d28")
-	)
 	(text "Amplificador"
 		(exclude_from_sim no)
 		(at 58.42 137.16 0)
@@ -1783,237 +2020,6 @@
 		)
 		(uuid "2bcbb3b6-cc7a-4e0a-b52f-881f9dd58478")
 	)
-	(text ".param RC2=510"
-		(exclude_from_sim no)
-		(at 233.68 110.49 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "33b0d8d0-e1da-45d0-9d01-8ded9343cdac")
-	)
-	(text "Eficiencia"
-		(exclude_from_sim no)
-		(at 276.225 106.68 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "59102844-cfa7-44ae-bc35-08921b325bf7")
-	)
-	(text ".step param VREF 1.5 1.6 0.01"
-		(exclude_from_sim no)
-		(at 233.68 137.16 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "5c0a7607-86cf-4582-946a-93a6f02b0463")
-	)
-	(text "Generador"
-		(exclude_from_sim no)
-		(at 29.845 113.03 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "5d3a7a05-48dc-4dfd-b448-dd8b93dc3081")
-	)
-	(text ".dc Vi 6.6 7\n.param RL=3.33\n \n.meas DC VoEnc FIND V(vo) AT 6.8\n.meas DC LDO PARAM (6.6 - VoEnc)"
-		(exclude_from_sim no)
-		(at 322.58 107.4166 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left top)
-		)
-		(uuid "5d5c6499-28da-4147-b0c1-b6b260ef5007")
-	)
-	(text ".step param RL 3.33 500 1"
-		(exclude_from_sim no)
-		(at 233.68 134.62 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "727aa953-17c6-46f6-81bf-33ffab787b92")
-	)
-	(text ".model TBJ-NPN-1 NPN(IS=4.679E-14 NF=1.01 ISE=2.642E-15 NE=1.581 BF={BETA} IKF=0.1371 VAF=52.64 NR=1.019 ISC=2.337E-14 NC=1.164 BR=11.57 IKR=0.1144 VAR=364.5 RB=1 IRB=1.00E-06 RBM=1 RE=0.2598 RC=1 XTB=0 EG=1.11 XTI=3 CJE=1.229E-11 VJE=0.5591 MJE=0.3385 TF=4.689E-10 XTF=160 VTF=2.828 ITF=0.8842 PTF=0 CJC=4.42E-12 VJC=0.1994 MJC=0.2782 XCJC=0.6193 TR=1.00E-32 CJS=0 VJS=0.75 MJS=0.333 FC=0.7936 Vceo=45 Icrating=100m mfg=Philips)"
-		(exclude_from_sim no)
-		(at 274.955 128.27 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "797de0f1-e4e1-4654-a0ee-90f3db27ff51")
-	)
-	(text ".step param RE list 250 500 1k"
-		(exclude_from_sim no)
-		(at 233.68 139.7 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "836a824a-3901-4383-a056-37a7d29cc07b")
-	)
-	(text ".dc Vi 0 8\n.param RL 3.33\n  \n.meas DC VoEspMin FIND V(vo) AT 6.6\n.meas DC VoEspMed FIND V(vo) AT 6.8\n.meas DC VoEspMax FIND V(vo) AT 7\n.meas DC VoError PARAM ((VoEspMin + VoEspMed + VoEspMax)/3 - 5)"
-		(exclude_from_sim no)
-		(at 232.41 83.9216 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left top)
-		)
-		(uuid "84ab0d4e-0aae-444a-8b1e-42fcfa0e45a9")
-	)
-	(text "Usar un potenciometro en el diseño final"
-		(exclude_from_sim no)
-		(at 13.335 116.84 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "87f8b9e0-8695-4033-ad94-2ca47e0661c6")
-	)
-	(text ".step param RC2 list 460 510 560"
-		(exclude_from_sim no)
-		(at 233.045 150.495 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "8c0cdf9f-8bba-4f99-ac43-e9e5f07cb5c8")
-	)
-	(text ".step param RB2 1.5k 3k 500"
-		(exclude_from_sim no)
-		(at 233.68 144.78 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "9d793f43-4378-4962-843b-7fe0a9c6c6b4")
-	)
-	(text ".op\n.step param RL 3.33 500 50\n \n.meas OP Vo1rc FIND V(vo) AT 500\n.meas OP Vo2rc FIND V(vo) AT 3.33\n.meas OP Io1rc FIND I(RL) AT 500\n.meas OP Io2rc FIND I(RL) AT 3.33\n.meas OP RegCar PARAM (-(Vo2rc - Vo1rc) / (Io2rc - Io1rc) )"
-		(exclude_from_sim no)
-		(at 321.945 83.9216 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left top)
-		)
-		(uuid "a1ac67fd-17f6-4fc3-a3a4-ec175df53a88")
-	)
-	(text ".param VREF=1.56"
-		(exclude_from_sim no)
-		(at 233.68 113.03 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "b179e03d-ef26-4d8c-9041-8a309a7bf0fb")
-	)
-	(text ".step param RC 100 1500 100"
-		(exclude_from_sim no)
-		(at 233.68 132.08 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "b18abf9d-9b85-4efe-add1-46123de36f53")
-	)
-	(text "Regulacion de linea"
-		(exclude_from_sim no)
-		(at 276.225 81.915 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "b3e5d9d9-f1ec-454e-b48b-b45330c092cf")
-	)
-	(text "-100*(V(vo)*I(RL))/(V(vi)*I(Vi))"
-		(exclude_from_sim no)
-		(at 276.225 109.22 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "b5893a3b-8ac8-41b9-ae08-9ac08a313e63")
-	)
-	(text ".param BETA 458.7"
-		(exclude_from_sim no)
-		(at 275.59 133.35 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "bd0abf20-1d2a-4605-9500-9e9216e6313e")
-	)
-	(text ".param Vi=6.8"
-		(exclude_from_sim no)
-		(at 233.68 115.57 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "c2baac50-8c97-4f73-9557-6d474eb510af")
-	)
-	(text "Parametros generales"
-		(exclude_from_sim no)
-		(at 233.68 106.68 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "cc83b616-7abf-4d1b-a85e-8fd21e1a723d")
-	)
-	(text ".param RC1=510"
-		(exclude_from_sim no)
-		(at 233.68 108.585 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "d8bb9f15-abfc-4fd6-a837-b8dddb22967f")
-	)
 	(text "Realimentador"
 		(exclude_from_sim no)
 		(at 149.225 127 0)
@@ -2024,83 +2030,6 @@
 			(justify left)
 		)
 		(uuid "db172f50-69ea-4d5e-a2db-2b147567dfaa")
-	)
-	(text "LDO"
-		(exclude_from_sim no)
-		(at 322.58 105.41 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "dc93edea-8758-40f1-852e-1ac9cbb92a9d")
-	)
-	(text ".step param BETA list 420 520 800"
-		(exclude_from_sim no)
-		(at 275.59 136.525 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "ddc3836c-dd5b-4aa8-99dc-34e7a355f78e")
-	)
-	(text ".step param RC1 list 460 510 560"
-		(exclude_from_sim no)
-		(at 233.045 147.955 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "df398227-f770-42ec-96ad-252b866a8cc9")
-	)
-	(text ".param RE=390"
-		(exclude_from_sim no)
-		(at 233.68 118.11 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "e3ef97dc-94b5-4bb4-997b-6b5e6bca3436")
-	)
-	(text ".dc Vi 6.6 7\n.param RL=3.33"
-		(exclude_from_sim no)
-		(at 276.225 111.8616 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left top)
-		)
-		(uuid "f805922a-c400-4f9d-a0d8-45b097eb18ec")
-	)
-	(text ".param RB1=51"
-		(exclude_from_sim no)
-		(at 233.68 120.65 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "fa893fbb-8358-4cfd-8fe9-e0ee76ddd883")
-	)
-	(text "Tensión de salida"
-		(exclude_from_sim no)
-		(at 231.775 81.915 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "fc4c1065-3332-4b9d-9240-0f45067f7ef7")
 	)
 	(global_label "vref"
 		(shape bidirectional)
@@ -2124,7 +2053,7 @@
 	)
 	(global_label "vo"
 		(shape bidirectional)
-		(at 175.26 68.58 90)
+		(at 209.55 68.58 90)
 		(effects
 			(font
 				(size 1.0668 1.0668)
@@ -2133,7 +2062,7 @@
 		)
 		(uuid "ba59bbbb-3a46-442e-bc68-27dbe603fe0f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 175.26 68.58 0)
+			(at 209.55 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2252,8 +2181,186 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "VREF1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:npn")
+		(at 182.88 82.55 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "292f20d7-6e27-448d-9816-6fdd0d2ffb16")
+		(property "Reference" "Q11"
+			(at 185.42 86.995 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547C"
+			(at 188.2902 86.995 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 182.88 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 182.88 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "model=\"BC547C\""
+			(at 182.88 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "94eba897-6ba1-4e1d-af12-9b8ad9c187fd")
+		)
+		(pin "3"
+			(uuid "948755cd-4dea-49ce-b8c9-44d43339d7fe")
+		)
+		(pin "1"
+			(uuid "3760fed5-6913-4767-82ae-624d5e9266ac")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
+					(reference "Q11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 181.61 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30c5ac11-bdfa-4a11-b3c2-59a86ce6a072")
+		(property "Reference" "RL2"
+			(at 184.785 66.9798 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50"
+			(at 187.6552 66.9798 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 181.61 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 181.61 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 181.61 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "26ad6dc7-9611-4f42-8a7c-9e1b808c7e42")
+		)
+		(pin "1"
+			(uuid "af80824e-04cb-4c23-8258-8f503e47b169")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
+					(reference "RL2")
 					(unit 1)
 				)
 			)
@@ -2343,7 +2450,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "Q5")
 					(unit 1)
 				)
@@ -2430,8 +2537,95 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "RD2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 173.99 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3876b5d6-2557-4ed2-87bd-482e034a0e47")
+		(property "Reference" "RL3"
+			(at 171.1198 73.025 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50"
+			(at 171.1198 70.1548 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
+			(at 173.99 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 173.99 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 173.99 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "67cb8aa5-49ba-4c48-a8b4-67a65dfd2d6d")
+		)
+		(pin "1"
+			(uuid "5a46256f-5485-4505-8b29-52137fd34f27")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
+					(reference "RL3")
 					(unit 1)
 				)
 			)
@@ -2496,7 +2690,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "#PWR04")
 					(unit 1)
 				)
@@ -2560,7 +2754,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "H4")
 					(unit 1)
 				)
@@ -2651,7 +2845,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "Q3")
 					(unit 1)
 				)
@@ -2738,7 +2932,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "R2")
 					(unit 1)
 				)
@@ -2825,7 +3019,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "R1")
 					(unit 1)
 				)
@@ -2912,7 +3106,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "RC2")
 					(unit 1)
 				)
@@ -2921,7 +3115,7 @@
 	)
 	(symbol
 		(lib_id "ltspice:res")
-		(at 173.99 71.12 0)
+		(at 208.28 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2929,7 +3123,7 @@
 		(dnp no)
 		(uuid "4786319a-10c2-4aef-bb80-ed090a7d61be")
 		(property "Reference" "RL1"
-			(at 176.8602 74.295 0)
+			(at 211.1502 74.295 0)
 			(effects
 				(font
 					(size 1.0668 1.0668)
@@ -2938,7 +3132,7 @@
 			)
 		)
 		(property "Value" "50"
-			(at 176.8602 77.1652 0)
+			(at 211.1502 77.1652 0)
 			(effects
 				(font
 					(size 1.0668 1.0668)
@@ -2947,7 +3141,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 173.99 71.12 0)
+			(at 208.28 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2956,7 +3150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 71.12 0)
+			(at 208.28 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2965,7 +3159,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 71.12 0)
+			(at 208.28 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2974,7 +3168,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 173.99 71.12 0)
+			(at 208.28 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2983,7 +3177,7 @@
 			)
 		)
 		(property "Sim.Params" "R=${VALUE}"
-			(at 173.99 71.12 0)
+			(at 208.28 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2999,7 +3193,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "RL1")
 					(unit 1)
 				)
@@ -3089,8 +3283,74 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 172.72 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51ae0c5f-5068-49c5-b8a6-676987dd443d")
+		(property "Reference" "#PWR09"
+			(at 172.72 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 172.72 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "790d90ff-a172-48b4-87c2-1b7ab55c48a3")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -3155,7 +3415,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "#PWR02")
 					(unit 1)
 				)
@@ -3246,8 +3506,95 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ltspice:res")
+		(at 173.99 82.55 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "639cf0f1-6feb-40b1-a32b-e4c8a72c00ea")
+		(property "Reference" "RL4"
+			(at 171.1198 79.375 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50"
+			(at 171.1198 76.5048 0)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
+			(at 173.99 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 173.99 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "R=${VALUE}"
+			(at 173.99 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b7249499-7a64-41a8-9089-028e687ccaec")
+		)
+		(pin "1"
+			(uuid "40ddb16b-e048-4b11-8e15-bf46cc2433f4")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
+					(reference "RL4")
 					(unit 1)
 				)
 			)
@@ -3334,7 +3681,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "VI1")
 					(unit 1)
 				)
@@ -3400,7 +3747,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "#PWR07")
 					(unit 1)
 				)
@@ -3464,7 +3811,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "H1")
 					(unit 1)
 				)
@@ -3554,7 +3901,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "Q7")
 					(unit 1)
 				)
@@ -3622,7 +3969,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "JP1")
 					(unit 1)
 				)
@@ -3688,7 +4035,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "#PWR05")
 					(unit 1)
 				)
@@ -3778,7 +4125,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "Q9")
 					(unit 1)
 				)
@@ -3869,7 +4216,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "Q10")
 					(unit 1)
 				)
@@ -3937,8 +4284,74 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 223.52 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c606909b-92a1-4321-b80c-6b6e485322f1")
+		(property "Reference" "#PWR08"
+			(at 223.52 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 223.52 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0763a057-f9e7-4d23-b2bd-20bdcc6c2258")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4027,7 +4440,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "Q6")
 					(unit 1)
 				)
@@ -4114,7 +4527,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "RB2")
 					(unit 1)
 				)
@@ -4204,7 +4617,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "Q1")
 					(unit 1)
 				)
@@ -4295,7 +4708,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "Q4")
 					(unit 1)
 				)
@@ -4361,7 +4774,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "#PWR01")
 					(unit 1)
 				)
@@ -4427,7 +4840,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "#PWR03")
 					(unit 1)
 				)
@@ -4436,7 +4849,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 175.26 83.82 0)
+		(at 209.55 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4445,7 +4858,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec2e5ae3-754b-49c5-ba7d-cf9188d6176b")
 		(property "Reference" "#PWR06"
-			(at 175.26 90.17 0)
+			(at 209.55 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4454,7 +4867,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 175.26 88.9 0)
+			(at 209.55 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4462,7 +4875,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 83.82 0)
+			(at 209.55 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4471,7 +4884,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 83.82 0)
+			(at 209.55 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4480,7 +4893,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 83.82 0)
+			(at 209.55 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4493,7 +4906,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "#PWR06")
 					(unit 1)
 				)
@@ -4557,7 +4970,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "H3")
 					(unit 1)
 				)
@@ -4644,7 +5057,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "RB1")
 					(unit 1)
 				)
@@ -4731,7 +5144,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "RE1")
 					(unit 1)
 				)
@@ -4795,7 +5208,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "H2")
 					(unit 1)
 				)
@@ -4882,7 +5295,7 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "RC1")
 					(unit 1)
 				)
@@ -4969,11 +5382,86 @@
 		)
 		(instances
 			(project "TP Integrador"
-				(path "/df343306-a769-4516-bcdb-ef7540e45a35"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "RD1")
 					(unit 1)
 				)
 			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 223.52 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fec6e3d5-e459-4e61-91fb-01459c424623")
+		(property "Reference" "C1"
+			(at 227.33 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 227.33 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
+			(at 224.4852 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 223.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7a08ad6-fc33-4666-90ae-2f2ac2e5686e")
+		)
+		(pin "2"
+			(uuid "b3b55f80-c59c-43d9-b0ea-3b778b71e546")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
 		)
 	)
 )
