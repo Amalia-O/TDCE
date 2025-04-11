@@ -20,88 +20,25 @@ Gmin = 2.70769e-013
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-Semiconductor Device Operating Points:
-                        --- Bipolar Transistors ---
-Name:       q8          q5          q6          q3          q2
-Model:    bc557c      bc557b      bc557b      2sb688      bc547b
-Ib:      -1.29e-06   -1.43e-07   -1.43e-07   -2.15e-02    8.82e-05
-Ic:      -5.70e-04   -4.43e-05   -4.44e-05   -1.51e+00    2.15e-02
-Vbe:     -6.03e-01   -5.45e-01   -5.45e-01   -7.93e-01    7.33e-01
-Vbc:     -1.58e-01    0.00e+00    6.58e-02    4.14e-01    3.18e-01
-Vce:     -4.46e-01   -5.45e-01   -6.10e-01   -1.21e+00    4.14e-01
-BetaDC:   4.42e+02    3.10e+02    3.11e+02    7.03e+01    2.44e+02
-Gm:       2.16e-02    1.70e-03    1.70e-03    5.84e+01    7.21e-01
-Rpi:      2.05e+04    1.88e+05    1.88e+05    1.20e+00    2.96e+02
-Rx:       1.00e+00    1.00e+00    1.00e+00    0.00e+00    1.00e+00
-Ro:       4.13e+04    4.68e+05    4.69e+05    6.65e+01    2.84e+03
-Cbe:      4.26e-11    2.75e-11    2.75e-11    1.12e-07    5.50e-10
-Cbc:      5.66e-12    6.79e-12    5.69e-12    4.15e-12    3.98e-12
-Cjs:      0.00e+00    0.00e+00    0.00e+00    2.00e-12    0.00e+00
-BetaAC:   4.42e+02    3.19e+02    3.20e+02    7.03e+01    2.14e+02
-Cbx:      3.34e-12    4.01e-12    3.36e-12    0.00e+00    2.45e-12
-Ft:       6.65e+07    7.04e+06    7.39e+06    8.27e+07    2.06e+08
 
-Name:       q13         q11         q12         q10         q9
-Model:    bc547c      bc547c      bc547c      bc547c      bc547c
-Ib:       3.55e-14    4.52e-09    5.45e-11    2.00e-07    3.54e-07
-Ic:      -7.42e-14   -1.39e-08    2.30e-08    9.07e-05    9.05e-05
-Vbe:      3.08e-05    3.31e-01    3.41e-01    5.59e-01    5.59e-01
-Vbc:      1.59e-02    3.47e-01   -3.69e+00    0.00e+00    4.45e-01
-Vce:     -1.59e-02   -1.59e-02    4.03e+00    5.59e-01    1.14e-01
-BetaDC:  -2.09e+00   -3.07e+00    4.22e+02    4.53e+02    2.55e+02
-Gm:      -1.45e-12   -3.51e-07    8.81e-07    3.47e-03    3.47e-03
-Rpi:      9.36e+11    6.83e+08    4.84e+08    1.31e+05    1.28e+05
-Rx:       1.00e+00    1.00e+00    1.00e+00    1.00e+00    1.00e+00
-Ro:       3.08e+11    1.09e+06    2.45e+09    5.79e+05    2.50e+04
-Cbe:      1.23e-11    1.67e-11    1.69e-11    2.97e-11    2.97e-11
-Cbc:      2.80e-12    9.66e-12    1.20e-12    2.74e-12    1.25e-11
-Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
-BetaAC:  -1.36e+00   -2.40e+02    4.26e+02    4.54e+02    4.45e+02
-Cbx:      1.72e-12    5.94e-12    7.36e-13    1.68e-12    7.67e-12
-Ft:       9.28e-03    1.73e+03    7.45e+03    1.62e+07    1.11e+07
-
-Name:       q7          q4          q1
-Model:    bc547c      bc547c      bc547c
-Ib:       9.29e-07    8.68e-08    8.90e-08
-Ic:       4.82e-04    4.46e-05    4.57e-05
-Vbe:      5.99e-01    5.37e-01    5.37e-01
-Vbc:     -7.56e+00   -7.37e+00   -7.31e+00
-Vce:      8.16e+00    7.91e+00    7.84e+00
-BetaDC:   5.19e+02    5.14e+02    5.14e+02
-Gm:       1.84e-02    1.71e-03    1.75e-03
-Rpi:      2.82e+04    3.03e+05    2.95e+05
-Rx:       1.00e+00    1.00e+00    1.00e+00
-Ro:       1.25e+05    1.34e+06    1.31e+06
-Cbe:      3.91e-11    2.75e-11    2.75e-11
-Cbc:      9.89e-13    9.95e-13    9.98e-13
-Cjs:      0.00e+00    0.00e+00    0.00e+00
-BetaAC:   5.18e+02    5.17e+02    5.16e+02
-Cbx:      6.08e-13    6.12e-13    6.13e-13
-Ft:       7.18e+07    9.34e+06    9.54e+06
+efimin: MIN(-100*(v(vo)*i(rl))/(v(vi)*i(vi)))=50.6199 FROM 9.3 TO 9.7
+efimax: MAX(-100*(v(vo)*i(rl))/(v(vi)*i(vi)))=52.7943 FROM 9.3 TO 9.7
 
 
-
-vo1rc: v(vo)=4.99104 at 500
-vo2rc: v(vo)=4.99037 at 3.33
-io1rc: i(rl)=0.00998209 at 500
-io2rc: i(rl)=1.49861 at 3.33
-regcar: (-(vo2rc - vo1rc) / (io2rc - io1rc) )=0.000450049
-
-
-Date: Wed Apr 02 13:20:46 2025
-Total elapsed time: 0.132 seconds.
+Date: Fri Apr 04 21:31:45 2025
+Total elapsed time: 0.197 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 723
+totiter = 2504
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
 matrix size = 62
-fillins = 58
+fillins = 71
 solver = Normal
-Matrix Compiler1: 8.24 KB object code size
-Matrix Compiler2: 6.62 KB object code size  0.9/1.3/[0.5]
+Matrix Compiler1:     448 opcodes  2.1/1.7/[0.7]
+Matrix Compiler2: 6.88 KB object code size  1.1/1.6/[0.5]
 
