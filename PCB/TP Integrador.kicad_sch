@@ -2062,16 +2062,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 74.93) (xy 194.31 69.85)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "2f54e0c2-bd8d-46c9-85aa-b8f6173b362a")
-	)
-	(wire
-		(pts
 			(xy 114.3 59.69) (xy 121.92 59.69)
 		)
 		(stroke
@@ -2379,6 +2369,16 @@
 			(type default)
 		)
 		(uuid "88dc5183-49c7-4ad1-a838-4c4bebb60644")
+	)
+	(wire
+		(pts
+			(xy 208.28 59.69) (xy 208.28 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a2e2048-9ead-45a9-95e5-52a5e0720b11")
 	)
 	(wire
 		(pts
@@ -3761,93 +3761,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ltspice:res")
-		(at 193.04 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4786319a-10c2-4aef-bb80-ed090a7d61be")
-		(property "Reference" "RL1"
-			(at 195.9102 65.405 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "50"
-			(at 195.9102 68.2752 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 193.04 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 193.04 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 193.04 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "R=${VALUE}"
-			(at 193.04 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "bbd4cea7-0f31-44fc-afae-fe2a696fb435")
-		)
-		(pin "1"
-			(uuid "2eee01ba-45f2-496f-b724-3051d6e17ed5")
-		)
-		(instances
-			(project "TP Integrador"
-				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
-					(reference "RL1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Reference_Voltage:TL431D")
 		(at 36.83 100.33 270)
 		(mirror x)
@@ -4233,6 +4146,72 @@
 			(project "TP Integrador"
 				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 208.28 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "675513df-16f0-43cc-a11a-97e390d32b95")
+		(property "Reference" "#PWR07"
+			(at 208.28 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 208.28 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "634111d0-6d85-4653-97ff-ef369dea0bc8")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4863,6 +4842,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 208.28 68.58 270)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8526aba-5667-4f00-9e8b-384207b6fbc7")
+		(property "Reference" "CL1"
+			(at 210.82 67.3099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Jumper_2_Bridged"
+			(at 210.82 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
+			(at 208.28 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 208.28 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8a3e627-2358-4291-9a62-cc8a842a54e3")
+		)
+		(pin "2"
+			(uuid "a3cae02d-4656-4de0-976e-0fef576295b0")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
+					(reference "CL1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ltspice:npn")
 		(at 78.74 115.57 0)
 		(unit 1)
@@ -5106,72 +5155,6 @@
 			(project "TP Integrador"
 				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 208.28 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c606909b-92a1-4321-b80c-6b6e485322f1")
-		(property "Reference" "#PWR08"
-			(at 208.28 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 208.28 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 208.28 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 208.28 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0763a057-f9e7-4d23-b2bd-20bdcc6c2258")
-		)
-		(instances
-			(project "TP Integrador"
-				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5652,7 +5635,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 194.31 74.93 0)
+		(at 194.31 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5661,7 +5644,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec2e5ae3-754b-49c5-ba7d-cf9188d6176b")
 		(property "Reference" "#PWR06"
-			(at 194.31 81.28 0)
+			(at 194.31 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5670,7 +5653,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 194.31 80.01 0)
+			(at 194.31 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5678,7 +5661,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 74.93 0)
+			(at 194.31 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5687,7 +5670,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 74.93 0)
+			(at 194.31 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5696,7 +5679,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 194.31 74.93 0)
+			(at 194.31 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5932,6 +5915,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 194.31 68.58 270)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc685453-34cd-48f0-beba-3e46b5c637f5")
+		(property "Reference" "RL1"
+			(at 196.85 67.3099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Jumper_2_Bridged"
+			(at 196.85 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
+			(at 194.31 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 194.31 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0417b56-83ed-4349-a5de-3befd5dd323d")
+		)
+		(pin "2"
+			(uuid "cd35f874-b469-4fc1-85f5-17e0a0ecdb2d")
+		)
+		(instances
+			(project "TP Integrador"
+				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
+					(reference "RL1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ltspice:res")
 		(at 69.85 59.69 0)
 		(unit 1)
@@ -6100,76 +6153,6 @@
 			(project "TP Integrador"
 				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
 					(reference "RD1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 208.28 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fec6e3d5-e459-4e61-91fb-01459c424623")
-		(property "Reference" "CL1"
-			(at 212.09 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.2u"
-			(at 212.09 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm"
-			(at 209.2452 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 208.28 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f7a08ad6-fc33-4666-90ae-2f2ac2e5686e")
-		)
-		(pin "2"
-			(uuid "b3b55f80-c59c-43d9-b0ea-3b778b71e546")
-		)
-		(instances
-			(project "TP Integrador"
-				(path "/103f7a8f-be6d-4c1b-98f8-d46e7455db32"
-					(reference "CL1")
 					(unit 1)
 				)
 			)
