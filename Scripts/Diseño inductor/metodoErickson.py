@@ -117,6 +117,11 @@ def obtenerParametros():
     return parser.parse_args()
 
 def main(param):
+    print("Metodo de Erickson")
+    print("Tomando los valores de:")
+    print(f"\tL = {param.inductancia} uHy\n\tIdc = {param.corrienteDC} A\n\tILmax = {param.corrienteInductorMaxima} A")
+    print(f"\tBmax = {param.campoMagneticoMaximo} mT\n\tf = {param.frecuencia} KHz\n\tPcu max = {param.potenciaMaximaCobre} W\n")
+
     # Datos de los csv
     dataNucleos = pd.read_csv(PATH_NUCLEOS, header = 0, names=[CORE_TYPE, GEOMETRIC_CONSTANTE, CROSS_SECTIONAL_AREA, BOBBIN_AREA, MLT, MAGNETIC_PATH_LENGTH])
     dataAWG = pd.read_csv(PATH_AWG, header = 0, names=[AWG, BARE_AREA, DIAMETER])
@@ -150,7 +155,8 @@ def main(param):
         entreHierro = 10**4 * (MU_0 * inductancia * param.corrienteInductorMaxima**2) / (campoMagneticoMaximo**2 * nucleo.at[CROSS_SECTIONAL_AREA])
 
         # Cantidad de vueltas
-        nVueltas = np.ceil(10**4 * (inductancia * param.corrienteInductorMaxima) / (campoMagneticoMaximo * nucleo.at[CROSS_SECTIONAL_AREA]))
+        # nVueltas = np.ceil(10**4 * (inductancia * param.corrienteInductorMaxima) / (campoMagneticoMaximo * nucleo.at[CROSS_SECTIONAL_AREA]))
+        nVueltas = np.ceil(np.sqrt(( inductancia * entreHierro ) / ( MU_0 * nucleo.at[CROSS_SECTIONAL_AREA] * 10**(-4) )))
 
         # Seccion de alambre en cm^2
         cotaSuperiorSeccionAlambre = (Ku * nucleo.at[BOBBIN_AREA]) / nVueltas
