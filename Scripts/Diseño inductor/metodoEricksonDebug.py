@@ -116,15 +116,28 @@ def obtenerParametros():
 
     return parser.parse_args()
 
+VERI_CONSTANTE_GEOMETRICA = 1
+VERI_SECCION_ALAMBRE = 2
+VERI_RESISTENCIA_COBRE = 3
+VERI_DENSIDAD_COBRE = 4
+VERI_CAMPO_MAG = 8
+
 def main(param):
     print("Metodo de Erickson")
     print("Tomando los valores de:")
     print(f"\tL = {param.inductancia} uHy\n\tIdc = {param.corrienteDC} A\n\tILmax = {param.corrienteInductorMaxima} A")
     print(f"\tBmax = {param.campoMagneticoMaximo} mT\n\tf = {param.frecuencia} KHz\n\tPcu max = {param.potenciaMaximaCobre} W\n")
 
+
     # Datos de los csv
     dataNucleos = pd.read_csv(PATH_NUCLEOS, header = 0, names=[CORE_TYPE, GEOMETRIC_CONSTANTE, CROSS_SECTIONAL_AREA, BOBBIN_AREA, MLT, MAGNETIC_PATH_LENGTH])
     dataAWG = pd.read_csv(PATH_AWG, header = 0, names=[AWG, BARE_AREA, DIAMETER])
+
+    print(" AWG: ", end = "")
+    for AWG_NUM in dataAWG[AWG]:
+        extra = "0" if int(AWG_NUM) < 10 else ""
+        print(f"{extra}{AWG_NUM}", end = " ")
+    print("")
 
     # Cambio de unidades
     inductancia = param.inductancia * 10**(-6)
@@ -140,16 +153,16 @@ def main(param):
     # Verificando la profundidad de penetracion
     profundidadPenetracion = 7.5 / np.sqrt(10**3 * param.frecuencia)
 
-    # Eleccion del nucleo
-    nucleosPosibles = dataNucleos.loc[dataNucleos[GEOMETRIC_CONSTANTE] > cotaMinimaKg]
-    nucleosPosibles = nucleosPosibles.reset_index()
-
     # Los sorteamos para que siempre el primero sea el mas chico
-    indicesDeNucleos = nucleosPosibles[GEOMETRIC_CONSTANTE].argsort()
+    indicesDeNucleos = dataNucleos[GEOMETRIC_CONSTANTE].argsort()
 
     for indiceNucleo in indicesDeNucleos:
-        nucleo = nucleosPosibles.loc[indiceNucleo]
-        print(f"Probando nucleo: {nucleo.at[CORE_TYPE]}")
+        nucleo = dataNucleos.loc[indiceNucleo]
+        print(f"{nucleo.at[CORE_TYPE]}:", end=" ")
+
+        if nucleo.at[GEOMETRIC_CONSTANTE] < cotaMinimaKg:
+            print(f"0{VERI_CONSTANTE_GEOMETRICA} " * len(dataAWG))
+            continue
 
         # Entrehierro en m
         entreHierro = 10**4 * (MU_0 * inductancia * param.corrienteInductorMaxima**2) / (campoMagneticoMaximo**2 * nucleo.at[CROSS_SECTIONAL_AREA])
@@ -161,24 +174,16 @@ def main(param):
         # Seccion de alambre en cm^2
         cotaSuperiorSeccionAlambre = (Ku * nucleo.at[BOBBIN_AREA]) / nVueltas
 
-        # Tendriamos que elegir un AWG
-        AWGPosibles = dataAWG.loc[dataAWG[BARE_AREA] * 10**(-3) < cotaSuperiorSeccionAlambre]
-        # AWGPosibles = AWGPosibles.loc[profundidadPenetracion > AWGPosibles[DIAMETER] / 2]
-        AWGPosibles = AWGPosibles.reset_index()
+        indicesAWG = list(range(len(dataAWG)))
 
-        # Los sorteamos para que siempre el primero sea el mas grande
-        indicesAWG = AWGPosibles[BARE_AREA].argsort()[::-1]
-
-        fueElegidoInductor = False
-
-        if AWGPosibles.size == 0:
-            print("\tNingun cable esta disponible para este nucleo\n")
-            continue
-
-        # AWGPosibles = AWGPosibles.to_numpy()
         for indiceAWG in indicesAWG:
-            AWGElegido = AWGPosibles.loc[indiceAWG]
-            print(f"\tProbando AWG#{int(AWGElegido.at[AWG])}")
+            AWGElegido = dataAWG.loc[indiceAWG]
+
+            if AWGElegido.at[BARE_AREA] * 10**(-3) > cotaSuperiorSeccionAlambre:
+                print(f"0{VERI_SECCION_ALAMBRE}", end = " ")
+                continue
+
+            resultadoAWG = 0
 
             # Verificamos la resistencia de bobinado
             resistenciaCobre = (DENSIDAD_COBRE * nVueltas * nucleo.at[MLT]) / (AWGElegido.at[BARE_AREA] * 10**-3)
@@ -193,39 +198,17 @@ def main(param):
             cumpleCampoMagnetico = campoMagnetico < param.campoMagneticoSaturacion * 10**(-3)
 
             if not cumpleResistenciaCobre:
-                print("\tNo cumple la resistencia del cobre")
-                print(f"\t - Se espraba que se cumpla {resistenciaCobre:.2f} <= {resistenciaCobreMaxima:.2f}")
+                resultadoAWG += VERI_RESISTENCIA_COBRE
 
             if not cumpleDensidadDeCorriente:
-                print("\tNo cumple la densidad de corriente")
-                print(f"\t - Se esperaba que se cumpla {densidadDeCorriente:.2f} <= 5")
+                resultadoAWG += VERI_DENSIDAD_COBRE
 
             if not cumpleCampoMagnetico:
-                print("\tNo cumple que el nucelo no sature")
-                print(f"\t - Se esperaba que se cumpla {campoMagnetico:.2f} <= {(param.campoMagneticoSaturacion * 10**(-3)):.2f}")
+                resultadoAWG += VERI_CAMPO_MAG
 
-            if not (cumpleResistenciaCobre and cumpleDensidadDeCorriente and cumpleCampoMagnetico):
-                print("")
-                continue
+            print(f"0{resultadoAWG}", end = " ")
 
-            fueElegidoInductor = True
-            break
-
-        if fueElegidoInductor:
-            break
-
-    if not fueElegidoInductor:
-        print("No se pudo elegir ningún inductor, considerar cambiar algún parametro de entrada o reducir los margenes")
-        return
-
-    print("Elegido:")
-    print(f"Nucleo {nucleo.at[CORE_TYPE]}, con AWG#{int(AWGElegido.at[AWG])}")
-    print(f"\tEntrehierro: {(10**3 * entreHierro):.3f} mm")
-    print(f"\tCantidad de vueltas: {int(nVueltas)}")
-    print(f"\tProfundidad de penetracion: {profundidadPenetracion:.3f} cm")
-    print(f"\tResistencia de bobina: {resistenciaCobre:.3f} Ohm")
-    print(f"\tDensidad de corriente: {densidadDeCorriente:.3f} A/mm^2")
-
+        print("")
 
 if __name__ == "__main__":
     main(obtenerParametros())
