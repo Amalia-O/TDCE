@@ -1,0 +1,25 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -47 -49 -48 48
+LINE Normal 97 0 -47 -49
+LINE Normal -48 48 97 0
+WINDOW 0 16 -49 Bottom 2
+WINDOW 3 35 51 Top 2
+SYMATTR Prefix X
+SYMATTR Value LM358
+SYMATTR ModelFile LM358 .lib
+PIN -48 -16 LEFT 8
+PINATTR PinName +
+PINATTR SpiceOrder 1
+PIN -48 16 LEFT 8
+PINATTR PinName -
+PINATTR SpiceOrder 2
+PIN 32 -16 BOTTOM 8
+PINATTR PinName Vcc+
+PINATTR SpiceOrder 3
+PIN 32 16 TOP 8
+PINATTR PinName Vcc-
+PINATTR SpiceOrder 4
+PIN 96 0 BOTTOM 8
+PINATTR PinName Vout
+PINATTR SpiceOrder 5
